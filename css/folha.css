@@ -1,0 +1,16 @@
+.home-menu{background-color: #004D54; box-shadow:none;}
+.home-menu ul{float: none;}
+a#coolab-logo{float: left;}
+/*.splash-container{background-color: #004D54; height: 700px; position: unset;}*/
+div#coolab-video{height: 500px; background: #004D54; position: relative;}
+div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; color: white;width: 100%; padding-left: 10%; padding-right: 10%;}
+div#coolab-video div#legenda p{float: left;}
+div#coolab-video div#legenda a{float:right; margin-top: 50px; }
+
+div.projeto{background: #004D54; height: 100%; width: 100%; padding: 30px;}
+div#coolab-noticias{background: #3E444F;}
+div#coolab-info{background: #004D54; }
+div#coolab-footer ul li{float: left; margin-left: 10px;list-style: none;}
+div#coolab-footer ul li a{text-decoration: none;}
+div#coolab-footer div.social-logo{width: 50px; height: 50px; background: #004D54; float: left; margin-left: 10px; border-radius: 30px}
+div.footer{position: unset;}
