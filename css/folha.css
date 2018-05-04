@@ -1,7 +1,7 @@
 .home-menu{background-color: #004D54; box-shadow:none;}
 .home-menu ul{float: none;}
 .pure-menu-disabled, .pure-menu-heading, .pure-menu-link{color: #fff;}
-div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #004D54; height: 2.6em; }
+div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b; height: 2.6em; }
 /*#coola-top-menu{overflow: hidden;}*/
 .custom-wrapper {
     background-color: #ffd390;
@@ -14,7 +14,7 @@ div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #004D54;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
 }
-
+.content-wrapper{top: 80%; background-color: #c6cbdc;}
 .custom-wrapper.open {
     height: 14em;
 }
@@ -84,16 +84,29 @@ div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #004D54;
 
 a#coolab-logo{float: left;}
 /*.splash-container{background-color: #004D54; height: 700px; position: unset;}*/
-div#coolab-video{position: relative;height: 500px; background: #004D54; }
+div#coolab-video{position: relative;height: 500px; background: #00bc9b; }
 div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; width: 100%; padding-right: 10%;padding-left: 10%; color: white;}
-div#coolab-video div#legenda p{float: left;}
-div#coolab-video div#legenda a{float:right; margin-top: 50px; border-radius: 25px;}
+div#coolab-video div#legenda p{font-size: 1.6em;}
+div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
 
-div.projeto{width: 100%; height: 16em;background: #004D54; }
-div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44;}
-div#coolab-noticias{background: #3E444F;}
-div#coolab-info{background: #004D54; }
+div#coolab-projetos{padding-right: 10%; padding-left: 10%;}
+div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px;}
+div.projeto{width: 100%; height: 20em;background: #e6eaf4; }
+
+div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44; padding: 10px;}
+div.projeto div.descricao h3{margin-bottom: 30px;}
+div.projeto div.descricao p{margin: 0;}
+div#coolab-noticias{background: #c6cbdc;border-top: 1px solid #a5a5a5; padding-left: 10%; padding-right: 10%;}
+div#coolab-noticias h2:first-child{ text-align: left; margin: 0 0 0 15px; }
+div#coolab-noticias div.noticia{width: 100%;background: #e6eaf4; height: 29em;}
+div#coolab-noticias div.noticia img{width: 100%;}
+div#coolab-noticias div.noticia h3{color: #00bc9b;}
+div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f}
+
+div#coolab-noticias div.noticia div.descricao{padding: 10px; }
+div#coolab-info{background: #00bc9b; }
 form#newsletter{text-align: left;}
+div.footer{background-color:#23293b;}
 div#coolab-footer div:first-child{margin-bottom: 25px;}
 div#coolab-footer ul{padding: 0;}
 div#coolab-footer ul li{float: left; margin-left: 10px;list-style: none;}
