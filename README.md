@@ -1,8 +1,8 @@
 Layout do Site da Coolab
 ========================
 Usando 
+http://purecss.io/
 
-[pure]: http://purecss.io/
 
 License
 -------
