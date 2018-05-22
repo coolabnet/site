@@ -1,3 +1,13 @@
+@font-face{
+    font-family: Montserrat_Light;
+    src: url('../fonts/montserrat/Montserrat-Light.ttf');
+}
+@font-face{
+    font-family: Montserrat_Alternates;
+    src: url('../fonts/montserrat_alternates/MontserratAlternates-Bold.ttf');
+}
+p{font-family: Montserrat_Light; }
+h1, h2,h3, h4,h5,h6{font-family: Montserrat_Alternates;}
 .home-menu{background-color: #004D54; box-shadow:none;}
 .home-menu ul{float: none;}
 .pure-menu-disabled, .pure-menu-heading, .pure-menu-link{color: #fff;}
@@ -83,28 +93,47 @@ div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b;
 }
 
 a#coolab-logo{float: left;}
+a.coolab-button{border-radius: 25px;background-color: #f9005b; text-decoration: none;}
 /*.splash-container{background-color: #004D54; height: 700px; position: unset;}*/
 div#coolab-video{position: relative;height: 500px; background: #00bc9b; }
 div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; width: 100%; padding-right: 10%;padding-left: 10%; color: white;}
 div#coolab-video div#legenda p{font-size: 1.6em;}
 div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
 
-div#coolab-projetos{padding-right: 10%; padding-left: 10%;}
+div#coolab-projetos{padding-right: 10%; padding-left: 10%; margin-top: 50px; border-top: 1px solid #a5a5a5;}
 div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px;}
-div.projeto{width: 100%; height: 20em;background: #e6eaf4; }
+div.projeto{width: 100%; height: 20em;background: #e6eaf4; margin-bottom: 25px;}
 
 div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44; padding: 10px;}
 div.projeto div.descricao h3{margin-bottom: 30px;}
 div.projeto div.descricao p{margin: 0;}
-div#coolab-noticias{background: #c6cbdc;border-top: 1px solid #a5a5a5; padding-left: 10%; padding-right: 10%;}
+
+div.trabalho div.descricao{height: 50%; position: relative; top:60%; width: 100%; text-align: left; padding: 10px; color: #23293b;}
+div#coolab-trabalhos a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b; float: right;}
+div.trabalho div.descricao h3{color:#23293b}
+
+div#coolab-noticias{background: #c6cbdc;border-top: 1px solid #a5a5a5; padding-left: 10%; padding-right: 10%; margin-top:30px;}
 div#coolab-noticias h2:first-child{ text-align: left; margin: 0 0 0 15px; }
 div#coolab-noticias div.noticia{width: 100%;background: #e6eaf4; height: 29em;}
 div#coolab-noticias div.noticia img{width: 100%;}
 div#coolab-noticias div.noticia h3{color: #00bc9b;}
 div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f}
-
 div#coolab-noticias div.noticia div.descricao{padding: 10px; }
 div#coolab-info{background: #00bc9b; }
+
+div#coolab-sobre {margin-top: 90px; }
+
+div.participar{margin-top: 45px;}
+
+div.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
+div.blog-post h2{color:#24b29a;}
+div.blog-post p.post-data{font-weight: bold;}
+div.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }
+div.blog-post a{text-decoration: none;}
+div.blog-post a p{  color: #ea3963; text-align: right; font-weight: bold;}
+
+ul#lista-arquivos{list-style: none; color:#ea3963;}
+
 form#newsletter{text-align: left;}
 div.footer{background-color:#23293b;}
 div#coolab-footer div:first-child{margin-bottom: 25px;}
