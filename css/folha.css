@@ -128,7 +128,7 @@ div#coolab-contato form div.pure-controls button{background-color: #f9005b;borde
 div.participar{margin-top: 45px;}
 
 div#coolab-post p.projeto-descricao{margin-bottom: 50px;}
-div#coolab-post div.projeto-info{border-top: 1px solid; border-bottom: 1px solid;}
+div#coolab-post div.projeto-info{border-top: 1px solid; border-bottom: 1px solid; margin-bottom: 50px;}
 div#coolab-post div.projeto-info p{border-bottom: 1px solid #fff;}
 div#coolab-post div.projeto-info p:last-child{border:none;}
 div#coolab-post div.projeto-info p span{float: right; font-weight: bold; text-align: left;}

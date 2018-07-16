@@ -36,7 +36,7 @@ Template Name: Como participar
           <p>Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Detraxit consequat et quo num tendi nada. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.</p>
 
           <p>Interagi no mé, cursus quis, vehicula ac nisi. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Diuretics paradis num copo é motivis de denguis. Aenean aliquam molestie leo, vitae iaculis nisl.</p> 
-          <a href="contato.html" style="display:inline-block; " class="pure-button coolab-button" >Contato</a>
+          <a href="/index.php/contato" style="display:inline-block; " class="pure-button coolab-button" >Contato</a>
         </div>
       </div>
       <div class="pure-u-1 pure-u-md-1-5"> </div>

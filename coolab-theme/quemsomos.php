@@ -41,6 +41,9 @@ Template Name: Quem somos
             <div class="pure-g"  style="border-bottom:1px solid #a5a5a5;">
                 <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
                     <div class="trabalho">
+                      <div class='img-trabalho'>
+                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/apoiar.png"/>
+                      </div>
                       <div class="descricao">
                         <h3 class="content-subhead">
                             Apoiar
@@ -58,6 +61,9 @@ Template Name: Quem somos
                 </div>
                 <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
                     <div class="trabalho">
+                    <div class="img-trabalho">
+                     <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/capacitar.png">
+                    </div>
                       <div class="descricao">
                          <h3 class="content-subhead">
                             Capacitar
@@ -78,6 +84,9 @@ Template Name: Quem somos
                 </div>
                 <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
                     <div class="trabalho">
+                    <div class="img-trabalho">
+                      <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/conectar.png">
+                    </div>
                         <div class="descricao">
                           <h3 class="content-subhead">
                             Conectar

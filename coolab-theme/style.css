@@ -156,6 +156,9 @@ div#coolab-footer div:first-child{margin-bottom: 25px;}
 div#coolab-footer ul{padding: 0;}
 div#coolab-footer ul li{float: left; margin-left: 10px;list-style: none;}
 div#coolab-footer ul li a{text-decoration: none;}
-div#coolab-footer div.social-logo{float: left; width: 50px; height: 50px; margin-left: 10px; border-radius: 30px; background: #004D54; }
+div#coolab-footer div.social-logo{float: left; width: 50px; height: 50px; margin-left: 10px; border-radius: 30px;}
+div#coolab-footer div#social-fb{background-image: url('images/icons/icon-fb.png');}
+div#coolab-footer div#social-flickr{background-image: url('images/icons/icon-flickr.png');}
+div#coolab-footer div#social-twitter{background-image: url('images/icons/icon-twitter.png');}
 
 div.footer{position: unset;}
