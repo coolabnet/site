@@ -16,9 +16,10 @@ h1, h2,h3, h4,h5,h6{font-family: Montserrat_Alternates;}
 .home-menu{background-color: #004D54; box-shadow:none;}
 .home-menu ul{float: none;}
 .pure-menu-disabled, .pure-menu-heading, .pure-menu-link{color: #fff;}
+ul.pure-menu-list li.pure-menu-item{padding-top:10px;}
 ul.pure-menu-list li.pure-menu-item a{color:#fff; padding: 5em 1em; text-decoration: none; white-space: nowrap; background-color: transparent;}
 .pure-g{letter-spacing: 0;}
-div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b; height: 2.6em; }
+div#menu{width: 100%; position: fixed; top:0; z-index: 2000; background-color: #00bc9b; height: 2.6em; }
 .menu-blue{background-color: #23293b !important;}
 /*#coola-top-menu{overflow: hidden;}*/
 .custom-wrapper {
@@ -32,7 +33,7 @@ div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
 }
-.content-wrapper{top: 80%; background-color: #c6cbdc;}
+.content-wrapper{top: 75%; background-color: #c6cbdc;}
 .custom-wrapper.open {
     height: 14em;
 }
@@ -109,7 +110,7 @@ div#coolab-video div#legenda p{font-size: 1.6em;}
 div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
 
 div#coolab-projetos{padding-right: 10%; padding-left: 10%; margin-top: 90px; border-top: 1px solid #a5a5a5;background-color: #c6cbdc;}
-div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px; width: 200px; float: left;}
+div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px; width: 200px;}
 div.projeto{width: 100%; height: 20em;background: #e6eaf4; margin-bottom: 25px;}
 
 div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44; padding: 10px;}
@@ -141,7 +142,7 @@ div#coolab-post div.projeto-info p{border-bottom: 1px solid #fff;}
 div#coolab-post div.projeto-info p:last-child{border:none;}
 div#coolab-post div.projeto-info p span{float: right; font-weight: bold; text-align: left;}
 
-div.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
+div.blog-post, article.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
 div.blog-post h2{color:#24b29a;}
 div.blog-post p.post-data{font-weight: bold;}
 div.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }

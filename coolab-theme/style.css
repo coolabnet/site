@@ -148,6 +148,12 @@ div.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }
 div.blog-post a{text-decoration: none;}
 div.blog-post a p{  color: #ea3963; text-align: right; font-weight: bold;}
 
+article.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
+article.blog-post h2{color:#24b29a;}
+article.blog-post p.post-data{font-weight: bold;}
+article.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }
+article.blog-post a{text-decoration: none;}
+article.blog-post a p{  color: #ea3963; text-align: right; font-weight: bold;}
 ul#lista-arquivos{list-style: none; color:#ea3963;}
 
 form#newsletter{text-align: left;}
