@@ -5,7 +5,7 @@ Template Name: Blog
 ?>
 <?php get_header();?>
 <div class="content-wrapper" style=" background: #c7cedd;">
-        <div id="coolab-sobre">
+      <div id="coolab-sobre">
           <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-5"> </div>
             
@@ -50,10 +50,8 @@ Template Name: Blog
                 </ul>
             </div>
         </div>
-        
-        </class="pure-g">
     </div>
-  <!-- footer vai arqui-->
+  <!-- footer vai arqui kkkkkkk-->
   <?php get_footer();?>
   </div>
 </div>

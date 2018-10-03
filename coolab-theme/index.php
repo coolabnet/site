@@ -47,12 +47,14 @@
 				?>
             </div>
             <div class="pure-u-1 pure-u-md-1-5"> 
-                <h2>Arquivo</h2>
+                <!-- <h2>Arquivo</h2>
                 <ul id="lista-arquivos">
                   <li>Fevereiro de 2018</li>
                   <li>Janeiro de 2018</li>
                   <li>Dezembro de 2017</li>
-                </ul>
+                </ul> -->
+
+				<?php get_sidebar(); ?>
             </div>
         
    </div>

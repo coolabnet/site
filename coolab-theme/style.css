@@ -108,7 +108,7 @@ div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; width: 100%
 div#coolab-video div#legenda p{font-size: 1.6em;}
 div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
 
-div#coolab-projetos{padding-right: 10%; padding-left: 10%; margin-top: 90px; border-top: 1px solid #a5a5a5; background-color: red;}
+div#coolab-projetos{padding-right: 10%; padding-left: 10%; border-top: 1px solid #a5a5a5; background-color: red;}
 div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px;}
 div.projeto{width: 100%; height: 20em;background: #e6eaf4; margin-bottom: 25px;}
 
@@ -129,7 +129,7 @@ div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f
 div#coolab-noticias div.noticia div.descricao{padding: 10px; }
 div#coolab-info{background: #00bc9b; }
 
-div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px; }
+div#coolab-contato, div#coolab-post {margin-top: 90px; }
 div#coolab-contato form textarea#mensagem{width: 100%; height: 200px; resize: none;}
 div#coolab-contato form div.pure-controls{margin: 1.5em 0 0 0; float: right;}
 div#coolab-contato form div.pure-controls button{background-color: #f9005b;border-radius: 50px;}

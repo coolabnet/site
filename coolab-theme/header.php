@@ -28,7 +28,7 @@
 
 <body>
     <div class="header">
-      <?php if(is_page()) : ?>
+      <?php if(is_home() || !is_front_page()) : ?>
         <div class="custom-wrapper pure-g menu-blue" id="menu">
       <?php else: ?> 
         <div class="custom-wrapper pure-g" id="menu"> 
