@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: Montserrat_Alternates;
-    src: url('../fonts/montserrat_alternates/MontserratAlternates-Bold.ttf');
+    src: url('../fonts/montserrat_alternates/MontserratAlternates-ExtraBold.ttf');
 }
 p{font-family: Montserrat_Light; }
 h1, h2,h3, h4,h5,h6{font-family: Montserrat_Alternates;}
@@ -121,11 +121,18 @@ div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f
 div#coolab-noticias div.noticia div.descricao{padding: 10px; }
 div#coolab-info{background: #00bc9b; }
 
-div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px; }
+div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px;}
+div#coolab-contato div.contact-form h1{font-family: Montserrat_Alternates; color: rgba(0, 0, 0, .8)}
+div#coolab-contato div.contact-form input{padding: 17px;}
+div#coolab-contato div.contact-form textarea{padding: 17px;}
 div#coolab-contato form textarea#mensagem{width: 100%; height: 200px; resize: none;}
 div#coolab-contato form div.pure-controls{margin: 1.5em 0 0 0; float: right;}
-div#coolab-contato form div.pure-controls button{background-color: #f9005b;border-radius: 50px;}
+div#coolab-contato form div.pure-controls button{background-color: rgb(236, 57, 99);border-radius: 50px; padding: 12px 40px; font-weight: bold; font-size: .9rem;}
 div.participar{margin-top: 45px;}
+::-webkit-input-placeholder {font-family: Montserrat_Light; color: #000; font-size: .8rem;}
+::-moz-placeholder {font-family: Montserrat_Light; color: #000; font-size: .8rem;}
+:-ms-input-placeholder {font-family: Montserrat_Light; color: #000000; font-size: .8rem;}
+:-moz-placeholder {font-family: Montserrat_Light; color: #000000; font-size: .8rem;}
 
 div#coolab-post p.projeto-descricao{margin-bottom: 50px;}
 div#coolab-post div.projeto-info{border-top: 1px solid; border-bottom: 1px solid; margin-bottom: 50px;}
