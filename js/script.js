@@ -285,6 +285,29 @@
     window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
     })(this, this.document);
 
+let form = $('.formulario');
+
+form.validate({
+    errorElement: 'span',
+    rules: {
+        name: 'required',
+        email: {
+            required: true,
+            email: true
+        },
+        subject: 'required',
+        text: 'required'
+    },
+    messages: {
+        name: 'Por favor, insira seu nome',
+        email: {
+            required: 'Por favor, insira seu email',
+            email: 'Por favor, insira um email válido'
+        },
+        subject: 'Por favor, informe o assunto',
+        text: 'Por favor, digite uma mensagem'
+    }
+});
 //script BLOG
 (function (window, document) {
     var menu = document.getElementById('menu'),
