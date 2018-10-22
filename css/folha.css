@@ -131,7 +131,7 @@ div#coolab-contato form textarea#mensagem{width: 100%; height: 200px; resize: no
 div#coolab-contato form div.pure-controls{margin: 1.5em 0 0 0; float: right;}
 div#coolab-contato form div.pure-controls button{background-color: rgb(236, 57, 99);border-radius: 50px; padding: 12px 40px; font-weight: bold; font-size: .9rem;}
 div.participar{margin-top: 45px;}
-::-webkit-input-placeholder {font-family: Montserrat_Light; color: #000; font-size: .8rem;}
+::-webkit-input-placeholder {font-family: Montserrat_Light; color: #000; font-size: .9rem;}
 ::-moz-placeholder {font-family: Montserrat_Light; color: #000; font-size: .8rem;}
 :-ms-input-placeholder {font-family: Montserrat_Light; color: #000000; font-size: .8rem;}
 :-moz-placeholder {font-family: Montserrat_Light; color: #000000; font-size: .8rem;}
