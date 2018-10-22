@@ -57,22 +57,22 @@
 
                 <div class="pure-u-1 pure-u-md-3-5 contact-form">
                     <h1> Contato </h1>
-                    <form class="pure-form pure-form-aligned">
+                    <form class="pure-form pure-form-aligned formulario">
                         <fieldset>
                             <div class="pure-control-group">
-                                <input id="nome" type="text" placeholder="Seu nome">
+                                <input id="nome" name="name" type="text" placeholder="Seu nome">
                             </div>
 
                             <div class="pure-control-group">
-                                <input id="email" type="email" placeholder="Seu email">
+                                <input id="email" name="email" type="email" placeholder="Seu email">
                             </div>
 
                             <div class="pure-control-group">
-                                <input id="assunto" type="text" placeholder="Assunto">
+                                <input id="assunto" name="subject" type="text" placeholder="Assunto">
                             </div>
 
                             <div class="pure-group">
-                                <textarea id="mensagem" class="pure-input-1-1" placeholder="Sua mensagem"></textarea>
+                                <textarea id="mensagem" name="text" class="pure-input-1-1" placeholder="Sua mensagem"></textarea>
                             </div>
 
                             <div class="pure-controls">
@@ -163,6 +163,8 @@
                     </div>
                 </div>
             </div>
+            <script src="js/jquery.slim.min.js"></script>
+            <script src="js/jquery.validate.min.js"></script>
             <script src="js/script.js"></script>
 </body>
 

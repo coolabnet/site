@@ -119,7 +119,9 @@ div#coolab-noticias div.noticia img{width: 100%;}
 div#coolab-noticias div.noticia h3{color: #00bc9b;}
 div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f}
 div#coolab-noticias div.noticia div.descricao{padding: 10px; }
-div#coolab-info{background: #00bc9b; }
+div#coolab-info{background: #00bc9b;}
+.error {
+    color: red; }
 
 div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px;}
 div#coolab-contato div.contact-form h1{font-family: Montserrat_Alternates; color: rgba(0, 0, 0, .8)}
