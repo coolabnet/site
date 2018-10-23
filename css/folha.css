@@ -162,11 +162,16 @@ div#coolab-video div#legenda p {
 	font-size: 1.6em;
 }
 
+div#coolab-video .video_texto{
+	color: rgb(44, 44, 44)
+}
+
 div#coolab-video div#legenda a.pure-button {
 	margin-top: 20px;
 	border-radius: 25px;
 	margin-bottom: 40px;
 	background-color: #f9005b;
+	padding: 8px 20px;
 }
 
 div#coolab-projetos {
