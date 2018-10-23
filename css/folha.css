@@ -683,8 +683,8 @@ a.pure-button-primary {
 /* This is the class used for the main content headers (<h2>) */
 
 .content-head {
-	font-weight: 400;
-	text-transform: uppercase;
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 2em 0 1em;
 }
