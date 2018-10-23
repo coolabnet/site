@@ -1118,18 +1118,6 @@ margin: 0 auto;
 	
 
 
-/* 	
-	ul {
-		list-style: none;
-		padding: 0;
-	
-	  }
-	  
-	  ul li:before {
-		content: '•';
-	 
-		color: #44B8A5;/* cor da bolinha */
-	   /* } */ 
  ul{
 	 list-style: none;
 	 padding: 0;
