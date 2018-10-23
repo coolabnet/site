@@ -1,24 +1,15 @@
-@font-face {
-	font-family: Montserrat_Light;
-	src: url('../fonts/montserrat/Montserrat-Light.ttf');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-@font-face {
-	font-family: Montserrat_Alternates;
-	src: url('../fonts/montserrat_alternates/MontserratAlternates-ExtraBold.ttf');
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat Alternates";
 }
 
 p {
-	font-family: Montserrat_Light;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Montserrat_Alternates;
+	font-family: "Montserrat";
 }
 
 .home-menu {
