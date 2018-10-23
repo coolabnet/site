@@ -1104,3 +1104,80 @@ body {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
+
+ 
+/* css turma reprograma */
+
+
+/* sessão quem somos */
+.container{
+width: 85%;
+margin: 0 auto;
+
+	}
+	
+
+
+/* 	
+	ul {
+		list-style: none;
+		padding: 0;
+	
+	  }
+	  
+	  ul li:before {
+		content: '•';
+	 
+		color: #44B8A5;/* cor da bolinha */
+	   /* } */ 
+ ul{
+	 list-style: none;
+	 padding: 0;
+ }
+
+ ul .sobre-list:before{
+	 content: '•';
+	 color: #44B8A5;
+
+ }
+	   
+	   /* .coolab-trabalhos-icon-apoiar img{
+		width: 24vh;
+		height: 14vh;} */
+	   /* }
+	   .coolab-trabalhos-icon-conectar img{
+	   width: 16vh;
+		height: 15vh;
+	}
+	   .coolab-trabalhos-imagesicon img{
+		   display: flex;
+	   } */
+	/* 
+	   .coolab-trabalhos-imagesicon{
+		   width: 30px;;
+	   } */
+	
+	   .coolab-trabalhos-imagesicon{
+		  height: 170px;
+	   }
+	   .coolab-trabalhos-imagesicon  img{
+			width: 55%;
+	   }
+	
+	   .sobre-coolab{
+		border-bottom: 1px solid #a5a5a5;
+	   }
+	
+	   .sobre-collab-title{
+		color: rgb(28, 40, 56) ;
+		font-size: 26px;
+		margin-bottom: 35px;
+		margin-top: 10px;
+		font-weight: 900;
+		
+	}
+	
+	.sobre-iframe{
+	width: 100%;
+	}
+	
