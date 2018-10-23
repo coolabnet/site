@@ -278,6 +278,12 @@ div#coolab-post {
 	margin-top: 90px;
 }
 
+@media (max-width: 26.25em) {
+	div#coolab-contato{
+		width: 80%;
+	}
+}
+
 div#coolab-contato div.contact-form h1 {
 	font-family: Montserrat_Alternates;
 	color: rgba(0, 0, 0, .8)
@@ -645,6 +651,13 @@ a.pure-button-primary {
 	min-height: 12%;
 	z-index: 2;
 	background: white;
+}
+
+@media (max-width: 26.25em) {
+	.content-wrapper {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 
