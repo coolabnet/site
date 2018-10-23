@@ -1,12 +1,20 @@
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Montserrat Alternates", sans-serif;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat Alternates";
+}
+
+p {
+	font-family: "Montserrat";
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
 
 .home-menu {
 	background-color: #004D54;
