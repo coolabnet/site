@@ -30,26 +30,42 @@ h6 {
 	float: none;
 }
 
+.pure-menu .pure-menu-heading img {
+	width: 60%;
+}
+
+.pure-menu-heading {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pure-menu-heading .custom-brand{
+	padding: 0;
+}
+
 .pure-menu-disabled,
 .pure-menu-heading,
 .pure-menu-link {
 	color: #fff;
+	font-family: Montserrat_Alternates;
+	font-size: 0.8em;
 }
 
 div#menu {
 	width: 100%;
 	position: fixed;
 	z-index: 2000;
-	background-color: #00bc9b;
-	height: 2.6em;
+	background-color: rgb(28, 40, 56);
+	height: 5.5em;
+	align-items: center;
 }
 
 
 /*#coola-top-menu{overflow: hidden;}*/
 
 .custom-wrapper {
-	background-color: #ffd390;
-	margin-bottom: 1em;
+	background-color: #c090ff;
 	-webkit-font-smoothing: antialiased;
 	height: 2.1em;
 	overflow: hidden;
