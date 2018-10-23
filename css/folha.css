@@ -15,7 +15,6 @@ p {
 .container {
 	width: 85%;
 	margin: 0 auto;
-}
 
 .home-menu {
 	background-color: #004D54;
@@ -166,26 +165,36 @@ div#coolab-video div#legenda {
 	left: 0;
 	width: 100%;
 	padding-right: 10%;
-	padding-left: 10%;
-	color: white;
+	padding-left: 7%;
+	color: 100;
 }
 
 div#coolab-video div#legenda p {
 	font-size: 1.6em;
+	color: rgb(44, 44, 44);
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
 }
+
+
 
 div#coolab-video div#legenda a.pure-button {
 	margin-top: 20px;
 	border-radius: 25px;
 	margin-bottom: 40px;
 	background-color: #f9005b;
+	padding: 8px 20px;
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
+	font-size: 0.8rem;
 }
-
+/* alteração de margin */
 div#coolab-projetos {
-	padding-right: 10%;
+	padding-right: 122px;
+	padding-top: 0;
 	padding-left: 10%;
-	margin-top: 90px;
-	border-top: 1px solid #a5a5a5;
+	margin-top: 0;
+	border-top: 1px solid black;
 }
 
 div#coolab-projetos h2:first-child {
@@ -200,7 +209,12 @@ div.projeto {
 	background: #e6eaf4;
 	margin-bottom: 25px;
 }
-
+.local-projetos{
+	font-weight: 700;
+}
+.strong-projeto{
+	margin-left: 10px;
+}
 div.projeto div.descricao {
 	height: 50%;
 	position: relative;
@@ -361,13 +375,17 @@ div#coolab-post p.projeto-descricao {
 }
 
 div#coolab-post div.projeto-info {
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
 	margin-bottom: 50px;
 }
 
 div#coolab-post div.projeto-info p {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #fef;
+	color: #000;
+}
+.coolab-post-projetos{
+	margin: 16px;
 }
 
 div#coolab-post div.projeto-info p:last-child {
@@ -1100,3 +1118,67 @@ body {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
+
+ 
+/* css turma reprograma */
+
+
+/* sessão quem somos */
+.container{
+width: 85%;
+margin: 0 auto;
+
+	}
+	
+
+
+ ul{
+	 list-style: none;
+	 padding: 0;
+ }
+
+ ul .sobre-list:before{
+	 content: '•';
+	 color: #44B8A5;
+
+ }
+	   
+	   /* .coolab-trabalhos-icon-apoiar img{
+		width: 24vh;
+		height: 14vh;} */
+	   /* }
+	   .coolab-trabalhos-icon-conectar img{
+	   width: 16vh;
+		height: 15vh;
+	}
+	   .coolab-trabalhos-imagesicon img{
+		   display: flex;
+	   } */
+	/* 
+	   .coolab-trabalhos-imagesicon{
+		   width: 30px;;
+	   } */
+	
+	   .coolab-trabalhos-imagesicon{
+		  height: 170px;
+	   }
+	   .coolab-trabalhos-imagesicon  img{
+			width: 55%;
+	   }
+	
+	   .sobre-coolab{
+		border-bottom: 1px solid #a5a5a5;
+	   }
+	
+	   .sobre-collab-title{
+		color: rgb(28, 40, 56) ;
+		font-size: 26px;
+		margin-bottom: 35px;
+		margin-top: 10px;
+		font-weight: 900;
+		
+	}
+	
+	.sobre-iframe{
+	width: 100%;
+	}
