@@ -15,7 +15,6 @@ p {
 .container {
 	width: 85%;
 	margin: 0 auto;
-}
 
 .home-menu {
 	background-color: #004D54;
@@ -166,26 +165,36 @@ div#coolab-video div#legenda {
 	left: 0;
 	width: 100%;
 	padding-right: 10%;
-	padding-left: 10%;
-	color: white;
+	padding-left: 7%;
+	color: 100;
 }
 
 div#coolab-video div#legenda p {
 	font-size: 1.6em;
+	color: rgb(44, 44, 44);
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
 }
+
+
 
 div#coolab-video div#legenda a.pure-button {
 	margin-top: 20px;
 	border-radius: 25px;
 	margin-bottom: 40px;
 	background-color: #f9005b;
+	padding: 8px 20px;
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
+	font-size: 0.8rem;
 }
-
+/* alteração de margin */
 div#coolab-projetos {
-	padding-right: 10%;
+	padding-right: 122px;
+	padding-top: 0;
 	padding-left: 10%;
-	margin-top: 90px;
-	border-top: 1px solid #a5a5a5;
+	margin-top: 0;
+	border-top: 1px solid black;
 }
 
 div#coolab-projetos h2:first-child {
