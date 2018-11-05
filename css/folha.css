@@ -1,152 +1,1103 @@
-@font-face{
-    font-family: Montserrat_Light;
-    src: url('../fonts/montserrat/Montserrat-Light.ttf');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat Alternates", sans-serif;
 }
-@font-face{
-    font-family: Montserrat_Alternates;
-    src: url('../fonts/montserrat_alternates/MontserratAlternates-Bold.ttf');
+
+.home-menu {
+	background-color: transparent;
+	box-shadow: none;
 }
-p{font-family: Montserrat_Light; }
-h1, h2,h3, h4,h5,h6{font-family: Montserrat_Alternates;}
-.home-menu{background-color: #004D54; box-shadow:none;}
-.home-menu ul{float: none;}
-.pure-menu-disabled, .pure-menu-heading, .pure-menu-link{color: #fff;}
-div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b; height: 2.6em; }
+
+.home-menu ul {
+	float: none;
+}
+
+.pure-menu .pure-menu-heading img {
+	width: 60%;
+}
+
+.pure-menu-heading {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pure-menu-heading .custom-brand{
+	padding: 0;
+}
+
+.pure-menu-disabled,
+.pure-menu-heading,
+.pure-menu-link {
+	color: #fff;
+	font-family: Montserrat_Alternates;
+	font-size: 0.8em;
+}
+
+div#menu {
+	width: 100%;
+	position: fixed;
+	z-index: 2000;
+	background-color: rgb(28, 40, 56);
+	height: 5.5em;
+	align-items: center;
+}
+
+
 /*#coola-top-menu{overflow: hidden;}*/
+
 .custom-wrapper {
-    background-color: #ffd390;
-    margin-bottom: 1em;
-    -webkit-font-smoothing: antialiased;
-    height: 2.1em;
-    overflow: hidden;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    transition: height 0.5s;
+	background-color: #c090ff;
+	-webkit-font-smoothing: antialiased;
+	height: 2.1em;
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	-ms-transition: height 0.5s;
+	transition: height 0.5s;
 }
-.content-wrapper{top: 80%; background-color: #c6cbdc;}
+
+.content-wrapper {
+	top: 80%;
+	background-color: #c6cbdc;
+}
+
 .custom-wrapper.open {
-    height: 14em;
+	height: 14em;
 }
 
 .custom-menu-3 {
-    text-align: right;
+	text-align: right;
 }
 
 .custom-toggle {
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
 }
 
 .custom-toggle .bar {
-    background-color: #777;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 100px;
-    position: absolute;
-    top: 18px;
-    right: 7px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
+	background-color: #777;
+	display: block;
+	width: 20px;
+	height: 2px;
+	border-radius: 100px;
+	position: absolute;
+	top: 18px;
+	right: 7px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .custom-toggle .bar:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	transform: translateY(-6px);
 }
 
 .custom-toggle.x .bar {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .custom-toggle.x .bar:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 @media (max-width: 47.999em) {
-  .custom-wrapper.open {
-      height: 14em !important;
-  }
-    .custom-menu-3 {
-        text-align: left;
-    }
-
-    .custom-toggle {
-        display: block;
-    }
-
+	.custom-wrapper.open {
+		height: 14em !important;
+	}
+	.custom-menu-3 {
+		text-align: left;
+	}
+	.custom-toggle {
+		display: block;
+	}
 }
 
-a#coolab-logo{float: left;}
-a.coolab-button{border-radius: 25px;background-color: #f9005b; text-decoration: none;}
+a#coolab-logo {
+	float: left;
+}
+
+a.coolab-button {
+	border-radius: 25px;
+	background-color: #f9005b;
+	text-decoration: none;
+}
+
+
 /*.splash-container{background-color: #004D54; height: 700px; position: unset;}*/
-div#coolab-video{position: relative;height: 500px; background: #00bc9b; }
-div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; width: 100%; padding-right: 10%;padding-left: 10%; color: white;}
-div#coolab-video div#legenda p{font-size: 1.6em;}
-div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
 
-div#coolab-projetos{padding-right: 10%; padding-left: 10%; margin-top: 90px; border-top: 1px solid #a5a5a5;}
-div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px;}
-div.projeto{width: 100%; height: 20em;background: #e6eaf4; margin-bottom: 25px;}
+div#coolab-video {
+	position: relative;
+	height: 500px;
+	background: #00bc9b;
+}
 
-div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44; padding: 10px;}
-div.projeto div.descricao h3{margin-bottom: 30px;}
-div.projeto div.descricao p{margin: 0;}
+div#coolab-video div#legenda {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-right: 10%;
+	padding-left: 7%;
+	color: 100;
+}
 
-div.trabalho div.descricao{height: 50%; position: relative; top:60%; width: 100%; text-align: left; padding: 10px; color: #23293b;}
-div#coolab-trabalhos a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b; float: right;}
-div.trabalho div.descricao h3{color:#23293b}
+div#coolab-video div#legenda p {
+	font-size: 1.6em;
+	color: rgb(44, 44, 44);
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
+}
 
-div#coolab-noticias{background: #c6cbdc;border-top: 1px solid #a5a5a5; padding-left: 10%; padding-right: 10%; margin-top:30px;}
-div#coolab-noticias h2:first-child{ text-align: left; margin: 0 0 0 15px; }
-div#coolab-noticias div.noticia{width: 100%;background: #e6eaf4; height: 29em;}
-div#coolab-noticias div.noticia img{width: 100%;}
-div#coolab-noticias div.noticia h3{color: #00bc9b;}
-div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f}
-div#coolab-noticias div.noticia div.descricao{padding: 10px; }
-div#coolab-info{background: #00bc9b; }
 
-div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px; }
-div#coolab-contato form textarea#mensagem{width: 100%; height: 200px; resize: none;}
-div#coolab-contato form div.pure-controls{margin: 1.5em 0 0 0; float: right;}
-div#coolab-contato form div.pure-controls button{background-color: #f9005b;border-radius: 50px;}
-div.participar{margin-top: 45px;}
 
-div#coolab-post p.projeto-descricao{margin-bottom: 50px;}
-div#coolab-post div.projeto-info{border-top: 1px solid; border-bottom: 1px solid; margin-bottom: 50px;}
-div#coolab-post div.projeto-info p{border-bottom: 1px solid #fff;}
-div#coolab-post div.projeto-info p:last-child{border:none;}
-div#coolab-post div.projeto-info p span{float: right; font-weight: bold; text-align: left;}
+div#coolab-video div#legenda a.pure-button {
+	margin-top: 20px;
+	border-radius: 25px;
+	margin-bottom: 40px;
+	background-color: #f9005b;
+	padding: 8px 20px;
+	font-family: "Montserrat Alternates";
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+/* alteração de margin */
+div#coolab-projetos {
+	padding-right: 122px;
+	padding-top: 0;
+	padding-left: 10%;
+	margin-top: 0;
+	border-top: 1px solid black;
+}
 
-div.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
-div.blog-post h2{color:#24b29a;}
-div.blog-post p.post-data{font-weight: bold;}
-div.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }
-div.blog-post a{text-decoration: none;}
-div.blog-post a p{  color: #ea3963; text-align: right; font-weight: bold;}
+div#coolab-projetos h2:first-child {
+	text-align: left;
+	margin: 0;
+	margin-left: 15px;
+}
 
-ul#lista-arquivos{list-style: none; color:#ea3963;}
+div.projeto {
+	width: 100%;
+	height: 20em;
+	background: #e6eaf4;
+	margin-bottom: 25px;
+}
 
-form#newsletter{text-align: left;}
-div.footer{background-color:#23293b;}
-div#coolab-footer div:first-child{margin-bottom: 25px;}
-div#coolab-footer ul{padding: 0;}
-div#coolab-footer ul li{float: left; margin-left: 10px;list-style: none;}
-div#coolab-footer ul li a{text-decoration: none;}
-div#coolab-footer div.social-logo{float: left; width: 50px; height: 50px; margin-left: 10px; border-radius: 30px; background: #004D54; }
-div.footer{position: unset;}
+div.projeto div.descricao {
+	height: 50%;
+	position: relative;
+	top: 60%;
+	width: 100%;
+	background-color: #003E44;
+	padding: 10px;
+}
+
+div.projeto div.descricao h3 {
+	margin-bottom: 30px;
+}
+
+div.projeto div.descricao p {
+	margin: 0;
+}
+
+div.trabalho div.descricao {
+	height: 50%;
+	position: relative;
+	top: 60%;
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	color: #23293b;
+}
+
+div#coolab-trabalhos a.pure-button {
+	margin-top: 20px;
+	border-radius: 25px;
+	margin-bottom: 40px;
+	background-color: #f9005b;
+	float: right;
+}
+
+div.trabalho div.descricao h3 {
+	color: #23293b
+}
+
+div#coolab-noticias {
+	background: #c6cbdc;
+	border-top: 1px solid #a5a5a5;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top: 30px;
+}
+
+div#coolab-noticias h2:first-child {
+	text-align: left;
+	margin: 0 0 0 15px;
+}
+
+div#coolab-noticias div.noticia {
+	width: 100%;
+	background: #e6eaf4;
+	height: 29em;
+}
+
+div#coolab-noticias div.noticia img {
+	width: 100%;
+}
+
+div#coolab-noticias div.noticia h3 {
+	color: #00bc9b;
+}
+
+div#coolab-noticias div.noticia p.data-noticia {
+	font-weight: bold;
+	color: #3e444f
+}
+
+div#coolab-noticias div.noticia div.descricao {
+	padding: 10px;
+}
+
+div#coolab-info {
+	background: #00bc9b;
+}
+
+.error {
+	color: red;
+}
+
+div#coolab-sobre,
+div#coolab-contato,
+div#coolab-post {
+	margin-top: 90px;
+}
+
+@media (max-width: 26.25em) {
+	div#coolab-contato{
+		width: 80%;
+	}
+}
+
+div#coolab-contato div.contact-form h1 {
+	font-family: Montserrat_Alternates;
+	color: rgba(0, 0, 0, .8)
+}
+
+div#coolab-contato div.contact-form input {
+	padding: 17px;
+}
+
+div#coolab-contato div.contact-form textarea {
+	padding: 17px;
+}
+
+div#coolab-contato form textarea#mensagem {
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+div#coolab-contato form div.pure-controls {
+	margin: 1.5em 0 0 0;
+	float: right;
+}
+
+div#coolab-contato form div.pure-controls button {
+	background-color: rgb(236, 57, 99);
+	border-radius: 50px;
+	padding: 12px 40px;
+	font-weight: bold;
+	font-size: .9rem;
+}
+
+div.participar {
+	margin-top: 45px;
+}
+
+::-webkit-input-placeholder {
+	font-family: Montserrat_Light;
+	color: #000;
+	font-size: .8rem;
+}
+
+::-moz-placeholder {
+	font-family: Montserrat_Light;
+	color: #000;
+	font-size: .8rem;
+}
+
+:-ms-input-placeholder {
+	font-family: Montserrat_Light;
+	color: #000000;
+	font-size: .8rem;
+}
+
+:-moz-placeholder {
+	font-family: Montserrat_Light;
+	color: #000000;
+	font-size: .8rem;
+}
+
+div#coolab-post p.projeto-descricao {
+	margin-bottom: 50px;
+}
+
+div#coolab-post div.projeto-info {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin-bottom: 50px;
+}
+
+div#coolab-post div.projeto-info p {
+	border-bottom: 1px solid #fff;
+}
+
+div#coolab-post div.projeto-info p:last-child {
+	border: none;
+}
+
+div#coolab-post div.projeto-info p span {
+	float: right;
+	font-weight: bold;
+	text-align: left;
+}
+
+div.blog-post {
+	width: 90%;
+	background-color: #e7ebf4;
+	padding: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+
+div.blog-post h2 {
+	color: #24b29a;
+}
+
+div.blog-post p.post-data {
+	font-weight: bold;
+}
+
+div.blog-post p.post-resumo {
+	padding-bottom: 30px;
+	border-bottom: solid 1px;
+}
+
+div.blog-post a {
+	text-decoration: none;
+}
+
+div.blog-post a p {
+	color: #ea3963;
+	text-align: right;
+	font-weight: bold;
+}
+
+ul#lista-arquivos {
+	list-style: none;
+	color: #ea3963;
+}
+
+form#newsletter {
+	text-align: left;
+}
+
+div.footer {
+	background-color: #23293b;
+}
+
+div#coolab-footer div:first-child {
+	margin-bottom: 25px;
+}
+
+div#coolab-footer ul {
+	padding: 0;
+}
+
+div#coolab-footer ul li {
+	float: left;
+	margin-left: 10px;
+	list-style: none;
+}
+
+div#coolab-footer ul li a {
+	text-decoration: none;
+}
+
+div#coolab-footer div.social-logo {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	border-radius: 30px;
+	background: #004D54;
+}
+
+div.footer {
+	position: unset;
+}
+
+
+/* MARKETING.CSS */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+body {
+	line-height: 1.7em;
+	color: #7f8c8d;
+	font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+	color: #34495e;
+}
+
+.pure-img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+
+.l-box {
+	padding: 1em;
+}
+
+.l-box-lrg {
+	padding: 2em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-center {
+	text-align: center;
+}
+
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+
+.pure-form label {
+	margin: 1em 0 0;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.pure-form input[type] {
+	border: 2px solid #ddd;
+	box-shadow: none;
+	font-size: 100%;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+
+.pure-button {
+	background-color: #1f8dd6;
+	color: white;
+	padding: 0.5em 2em;
+	border-radius: 5px;
+}
+
+a.pure-button-primary {
+	background: white;
+	color: #1f8dd6;
+	border-radius: 5px;
+	font-size: 120%;
+}
+
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+	padding: 0.5em;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+.home-menu {
+	background: #2d3e50;
+}
+
+.pure-menu.pure-menu-fixed {
+	/* Fixed menus normally have a border at the bottom. */
+	border-bottom: none;
+	/* I need a higher z-index here because of the scroll-over effect. */
+	z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+	color: white;
+	font-weight: 400;
+	font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+	color: white;
+}
+
+.home-menu a {
+	color: #6FBEF3;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+	background: none;
+	border: none;
+	color: #AECFE5;
+}
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+	background: #1f8dd6;
+	z-index: 1;
+	overflow: hidden;
+	/* The following styles are required for the "scroll-over" effect */
+	width: 100%;
+	height: 88%;
+	top: 0;
+	left: 0;
+	position: fixed !important;
+}
+
+.splash {
+	/* absolute center .splash within .splash-container */
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/* This is the main heading that appears on the blue section */
+
+.splash-head {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border: 3px solid white;
+	padding: 1em 1.6em;
+	font-weight: 100;
+	border-radius: 5px;
+	line-height: 1em;
+}
+
+
+/* This is the subheading that appears on the blue section */
+
+.splash-subhead {
+	color: white;
+	letter-spacing: 0.05em;
+	opacity: 0.8;
+}
+
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+
+.content-wrapper {
+	/* These styles are required for the "scroll-over" effect */
+	position: absolute;
+	top: 87%;
+	width: 100%;
+	min-height: 12%;
+	z-index: 2;
+	background: white;
+}
+
+@media (max-width: 26.25em) {
+	.content-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+/* We want to give the content area some more padding */
+
+.content {
+	padding: 1em 1em 3em;
+}
+
+
+/* This is the class used for the main content headers (<h2>) */
+
+.content-head {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 2em 0 1em;
+}
+
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+
+.content-head-ribbon {
+	color: white;
+}
+
+
+/* This is the class used for the content sub-headers (<h3>) */
+
+.content-subhead {
+	color: #1f8dd6;
+}
+
+.content-subhead i {
+	margin-right: 7px;
+}
+
+
+/* This is the class used for the dark-background areas. */
+
+.ribbon {
+	background: #2d3e50;
+	color: #aaa;
+}
+
+
+/* This is the class used for the footer */
+
+.footer {
+	background: #111;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+
+@media (min-width: 48em) {
+	/* We increase the body font size */
+	body {
+		font-size: 16px;
+	}
+	/* We can align the menu header to the left, but float the
+    menu items to the right. */
+	.home-menu {
+		text-align: left;
+	}
+	.home-menu ul {
+		float: right;
+	}
+	/* We increase the height of the splash-container */
+	/*    .splash-container {
+        height: 500px;
+    }*/
+	/* We decrease the width of the .splash, since we have more width
+    to work with */
+	.splash {
+		width: 50%;
+		height: 50%;
+	}
+	.splash-head {
+		font-size: 250%;
+	}
+	/* We remove the border-separator assigned to .l-box-lrg */
+	.l-box-lrg {
+		border: none;
+	}
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+
+@media (min-width: 78em) {
+	/* We increase the header font size even more */
+	.splash-head {
+		font-size: 300%;
+	}
+}
+
+
+/*  MARKETING-OLD-UE.CSS  */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+body {
+	line-height: 1.7em;
+	color: #7f8c8d;
+	font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+	color: #34495e;
+}
+
+.pure-img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+
+.l-box {
+	padding: 1em;
+}
+
+.l-box-lrg {
+	padding: 2em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-center {
+	text-align: center;
+}
+
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+
+.pure-form label {
+	margin: 1em 0 0;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.pure-form input[type] {
+	border: 2px solid #ddd;
+	box-shadow: none;
+	font-size: 100%;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+
+.pure-button {
+	background-color: #1f8dd6;
+	color: white;
+	padding: 0.5em 2em;
+	border-radius: 5px;
+}
+
+a.pure-button-primary {
+	background: white;
+	color: #1f8dd6;
+	border-radius: 5px;
+	font-size: 120%;
+}
+
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+	padding: 0.5em;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+.home-menu {
+	background: #2d3e50;
+}
+
+.pure-menu.pure-menu-fixed {
+	/* Fixed menus normally have a border at the bottom. */
+	border-bottom: none;
+	/* I need a higher z-index here because of the scroll-over effect. */
+	z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+	color: white;
+	font-weight: 400;
+	font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+	color: white;
+}
+
+.home-menu a {
+	color: #6FBEF3;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+	background: none;
+	border: none;
+	color: #AECFE5;
+}
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+	background: #1f8dd6;
+	z-index: 1;
+	overflow: hidden;
+	/* The following styles are required for the "scroll-over" effect */
+	width: 100%;
+	height: 88%;
+	top: 0;
+	left: 0;
+	position: fixed !important;
+}
+
+.splash {
+	/* absolute center .splash within .splash-container */
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/* This is the main heading that appears on the blue section */
+
+.splash-head {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border: 3px solid white;
+	padding: 1em 1.6em;
+	font-weight: 100;
+	border-radius: 5px;
+	line-height: 1em;
+}
+
+
+/* This is the subheading that appears on the blue section */
+
+.splash-subhead {
+	color: white;
+	letter-spacing: 0.05em;
+	opacity: 0.8;
+}
+
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+
+.content-wrapper {
+	/* These styles are required for the "scroll-over" effect */
+	position: absolute;
+	top: 87%;
+	width: 100%;
+	min-height: 12%;
+	z-index: 2;
+	background: white;
+}
+
+
+/* We want to give the content area some more padding */
+
+.content {
+	padding: 1em 1em 3em;
+}
+
+
+/* This is the class used for the main content headers (<h2>) */
+
+.content-head {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 2em 0 1em;
+}
+
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+
+.content-head-ribbon {
+	color: white;
+}
+
+
+/* This is the class used for the content sub-headers (<h3>) */
+
+.content-subhead {
+	color: #1f8dd6;
+}
+
+.content-subhead i {
+	margin-right: 7px;
+}
+
+
+/* This is the class used for the dark-background areas. */
+
+.ribbon {
+	background: #2d3e50;
+	color: #aaa;
+}
+
+
+/* This is the class used for the footer */
+
+.footer {
+	background: #111;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+
+
+/* We increase the body font size */
+
+body {
+	font-size: 16px;
+}
+
+
+/* We can align the menu header to the left, but float the
+    menu items to the right. */
+
+.home-menu {
+	text-align: left;
+}
+
+.home-menu ul {
+	float: right;
+}
+
+
+/* We increase the height of the splash-container */
+
+
+/*    .splash-container {
+        height: 500px;
+    }*/
+
+
+/* We decrease the width of the .splash, since we have more width
+    to work with */
+
+.splash {
+	width: 50%;
+	height: 50%;
+}
+
+.splash-head {
+	font-size: 250%;
+}
+
+
+/* We remove the border-separator assigned to .l-box-lrg */
+
+.l-box-lrg {
+	border: none;
+}
+
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
