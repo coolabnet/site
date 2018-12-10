@@ -16,7 +16,7 @@
     <header class="header-index">
         <nav class="navbar navbar-expand-lg navbar-dark align-content-between d-flex flex-wrap">
             <div class="header-nav container d-flex ">
-                <a class="navbar-brand col-2 " href="index.html">
+                <a class="navbar-brand col-2 " href="<?php echo home_url();?>">
                     <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/coolab_logo_branco.png" alt="" class="img-logo img-responsive">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -24,26 +24,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-item-link nav-link medium active" href="quemsomos.html">Quem somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-item-link nav-link medium active" href="comoparticipar.html">Como
-                                participar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-item-link nav-link medium active" href="projetos.html">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-item-link nav-link medium active" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-item-link nav-link medium active " href="documentacao.html">Documentação</a>
-                        </li>
-                    </ul>
-                </div>
+
+                <?php
+                   wp_nav_menu(array(
+                     'menu'=>'menu_coolab',
+                     'menu_class'=>'navbar-nav mr-auto',
+                     'theme_location'=>'menu_coolab',
+                     'container'=>'div',
+                     'container_class'=>'collapse navbar-collapse',
+                     'container_id'=>'navbarSupportedContent',
+                     ));
+                 ?>
+
+              
             </div>
 
             <div class="container">
