@@ -27,16 +27,28 @@
 
                 <?php
                    wp_nav_menu(array(
+<<<<<<< HEAD
                      'menu'=>'principal-home',
+=======
+                     'menu'=>'menu_coolab',
+>>>>>>> 8aea5fe7b5d23c4c995e525cb71abf1ca4252f56
                      'menu_class'=>'navbar-nav mr-auto',
                      'theme_location'=>'menu_coolab',
                      'container'=>'div',
                      'container_class'=>'collapse navbar-collapse',
+<<<<<<< HEAD
                      'container_id'=>'navbarSupportedContent'
                      ));
                  ?>
 
 
+=======
+                     'container_id'=>'navbarSupportedContent',
+                     ));
+                 ?>
+
+              
+>>>>>>> 8aea5fe7b5d23c4c995e525cb71abf1ca4252f56
             </div>
 
             <div class="container">
