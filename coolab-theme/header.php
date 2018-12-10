@@ -32,11 +32,11 @@
                      'theme_location'=>'menu_coolab',
                      'container'=>'div',
                      'container_class'=>'collapse navbar-collapse',
-                     'container_id'=>'navbarSupportedContent',
+                     'container_id'=>'navbarSupportedContent'
                      ));
                  ?>
 
-              
+
             </div>
 
             <div class="container">

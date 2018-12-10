@@ -18,4 +18,5 @@ function stylize_menu_anchor ($atts) {
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'stylize_menu_anchor');
+
 ?>
