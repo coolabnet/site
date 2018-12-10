@@ -116,6 +116,27 @@ a.nav-item-link:hover {
   /* margin-right: 30rem; */
 }
 
+
+/* menu
+ul.coolab-menu-trans, .nav-item li {
+
+}
+
+ul.coolab-menu-trans li, .nav-item-link .nav-link .medium .active a {
+
+}
+*/
+/*
+.menu-item, .nav-item-link,  .nav-link, .medium, .active {
+
+}
+*/
+
+.nav-item-link,  .nav-link, .medium, .active, li.menu-item a  {
+  color: red;
+}
+
+
 @media (max-width: 420px) {
   .img-logo {
     margin-right: 0px;
