@@ -6,13 +6,11 @@
                         alt=""> Contato
                 </a>
                 <a class="medium nav-link nav-link-barra" href="">|</a>
-                <a class="medium nav-link nav-link-barra" href="quemsomos.html">Quem somos
-                    <span class="sr-only">(current)</span>
-                </a>
-                <a class="medium nav-link nav-link-barra" href="comoparticipar.html">Como participar</a>
-                <a class="medium nav-link nav-link-barra" href="projetos.html">Projetos</a>
-                <a class="medium nav-link nav-link-barra" href="blog.html">Blog</a>
-                <a class="medium nav-link nav-link-barra" href="documentacao.html">Documentação</a>
+                <a class="medium nav-link nav-link-barra" href="index.php/quem-somos/">Quem somos</a>
+                <a class="medium nav-link nav-link-barra" href="index.php/como-participar/">Como participar</a>
+                <a class="medium nav-link nav-link-barra" href="index.php/category/projetos/">Projetos</a>
+                <a class="medium nav-link nav-link-barra" href="index.php/category/noticias">Blog</a>
+                <a class="medium nav-link nav-link-barra" href="http://wiki.coolab.org">Documentação</a>
             </nav>
 
             <nav class="nav-2 navbar navbar-dark justify-content-center row">

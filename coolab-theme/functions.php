@@ -13,10 +13,15 @@ add_filter('nav_menu_css_class', 'estilizar_items_menu', 10, 2);
 // the idea here is to use bootstrap CSS (nav-item etc) in the wp menu.
 // couldn't find any other way
 
-function stylize_menu_anchor ($atts) {
-	$atts['class'] = "nav-item-link nav-link medium active";
-  return $atts;
+
+function stylize_menu_anchor ( $atts, $item, $args) {
+		// check if the item is in the primary menu
+		if( $args->menu == 'principal-home' ) {
+	  	// add the desired attributes:
+	    $atts['class'] = "nav-item-link nav-link medium active";
+		}
+  	return $atts;
 }
-add_filter( 'nav_menu_link_attributes', 'stylize_menu_anchor');
+add_filter( 'nav_menu_link_attributes', 'stylize_menu_anchor', 10, 3 );
 
 ?>

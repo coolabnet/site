@@ -27,7 +27,7 @@
 
                 <?php
                    wp_nav_menu(array(
-                     'menu'=>'menu_coolab',
+                     'menu'=>'principal-home',
                      'menu_class'=>'navbar-nav mr-auto',
                      'theme_location'=>'menu_coolab',
                      'container'=>'div',
