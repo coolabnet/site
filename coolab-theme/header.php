@@ -1,55 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Montserrat+Alternates:400,600,800" rel="stylesheet">
     <title>Coolab</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
-
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-    <!--[if lte IE 8]>
-            <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layouts/marketing-old-ie.css">
-        <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layouts/marketing.css">
-    <!--<![endif]-->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/folha.css">
+    <?php wp_head(); ?>
 </head>
 
 <body>
-    <div class="header">
-      <?php if(is_page()) : ?>
-        <div class="custom-wrapper pure-g menu-blue" id="menu">
-      <?php else: ?> 
-        <div class="custom-wrapper pure-g" id="menu"> 
-      <?php endif;?>
-           <div class="pure-u-1 pure-u-md-1-5">
-               <div class="pure-menu" >
-                   <a href="<?php echo home_url();?>" style="padding: 0;" class="pure-menu-heading custom-brand"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/logo.png"></a>
-                   <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-               </div>
-           </div>
-           <div class="pure-u-1 pure-u-md-4-5">
-                   <?php
-                      wp_nav_menu(array(
-                        'menu'=>'menu_coolab',
-                        'menu_class'=>'pure-menu-list', 
-                        'theme_location'=>'menu_coolab',
-                        'container'=>'div',
-                        'container_class'=>'pure-menu pure-menu-horizontal custom-can-transform'
-                        ));
-                    ?>
-               <!-- </div> -->
-           </div>
-         </div>
-    </div>
+    <header class="header-index">
+        <nav class="navbar navbar-expand-lg navbar-dark align-content-between d-flex flex-wrap">
+            <div class="header-nav container d-flex ">
+                <a class="navbar-brand col-2 " href="index.html">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/coolab_logo_branco.png" alt="" class="img-logo img-responsive">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-link medium active" href="quemsomos.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-link medium active" href="comoparticipar.html">Como
+                                participar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-link medium active" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-link medium active" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link nav-link medium active " href="documentacao.html">Documentação</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row header-text-row">
+                    <div class="header-text align-items-start col-lg-6 col-md-9">
+                        <h1 class="header-title">A Coolab agrega diversas pessoas e projetos de telecomunicação
+                            comunitária
+                            fomentando infraestruturas autônomas,
+                            através da capacitação técnica e ativação</h1>
+                        <button type="submit" class="btn btn-rosa text-light"><a href="comoparticipar.html" class="text-light">Como
+                            participar</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>

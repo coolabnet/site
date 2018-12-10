@@ -1,9 +1,3 @@
-/*
-Theme Name: Coolab
-Description: Templete da Coolab
-Author: Coolab
-*/
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,9 +5,6 @@ Author: Coolab
   color: #1E2738;
 }
 
-body{
-  background: #E7EBF4;
-}
 
 a:hover {
   text-decoration: none;
@@ -29,35 +20,15 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "Montserrat Alternates";
-
-}
-
-a.medium {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-
-label.medium {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
-  color: #50596F;
-}
-
-p.medium {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
-  color: #50596F
+  
+  
 }
 
 h5{
   font-weight: bold;
 }
-
 p {
+  
   font-weight: 600;
   color: #1E2738;
 }
@@ -66,20 +37,8 @@ p {
   background-color: #1E2738;
 }
 
-.btn-rosa {
-  background-color:  #EA3963;
-  padding: 7px 35px;
-  border-radius: 20px;
-  text-align: center;
-  border: none;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin: 20px 0;
-}
-
 .header-index {
-  background-image: url(assets/images/img_home.png);
+  background-image: url("../assest/banner.jpg");
   background-size: cover;
   height: 30rem;
 }
@@ -89,21 +48,34 @@ p {
   z-index: 999;
 }
 
-.nav-padding {
-  padding: 10px 0;
-}
-
 button.header-nav-img {
   color: white;
 }
 
+.header-btn {
+  background-color:  #EA3963;
+  
+}
+
+.header-text {
+  padding: 0 0 2% 6%;
+  display: flex;
+  align-content: flex-start;
+}
+
 .header-title {
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 a.nav-item-link:hover {
   color: #EA3963!important;
+  
+}
+
+.row-footer-heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 .bg-green {
@@ -113,7 +85,7 @@ a.nav-item-link:hover {
 
 .img-logo {
   width: 120px;
-  /* margin-right: 30rem; */
+  margin-right: 30rem;
 }
 
 @media (max-width: 420px) {
@@ -142,24 +114,12 @@ a.nav-item-link:hover {
   .header-index {
     height: 30rem;
   }
-
+  
   .header-text {
     padding: 0;
-    padding-left: 10px;
+    
   }
-
-  .header-text h1 {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  .header-title {
-    font-weight: 300;
-    font-size: 1.3rem;
-    text-align: left;
-
-  }
-
+  
   .footer {
     align-content: center;
   }
@@ -168,29 +128,25 @@ a.nav-item-link:hover {
     align-items: center!important;
     padding-bottom: 0;
   }
-
+  
   .footer-div-2 {
     flex-direction: column;
     align-items: center!important;
   }
-
+  
   .nav-3 {
     padding-top: -3px;
-
   }
-
+  
   .nav-3, .nav-4 {
     align-items: center!important;
   }
-
-  .nav-4 p {
-    text-align: center;
-  }
-
+  
   .nav-link-barra {
     display: none;
   }
-
+  
+  
 }
 
 .container-menor {
@@ -213,7 +169,7 @@ a.nav-item-link:hover {
 .contato .button {
   display: flex;
   justify-content: flex-end;
-  margin-top: 24px;
+  margin-top: 24px; 
   margin-bottom: 50px;
 }
 
@@ -249,17 +205,29 @@ a.nav-item-link:hover {
   padding: 0 5px;
 }
 
+/* footer-projetos */
 .card-projetos {
   width: 100%;
   height: 350px;
-  background-image: url(assets/temp/noticias/foto1.png);
+  background-image: url(../assest/noticias/foto1.png);
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
+  
 }
 
+
+.card-dois-projetos{
+  
+  background-image: url(../assest/projetos/amazonas.jpg);
+  
+}
+
+.card-tres-projetos{
+  background-image: url(../assest/projetos/maxresdefault.jpg);
+}
 .btn-footerprojetos{
   width: 100%;
   padding-bottom: 35px;
@@ -280,10 +248,12 @@ a.nav-item-link:hover {
   font-size: 1.25rem;
 }
 
+.footer-projetos-title{
+  font-weight: 100;
+}
 .card-projetos-text {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 0.825rem;
+  font-weight: 700;
+  font-size: 0.8125rem;
   color: #ffffff;
 }
 
@@ -302,10 +272,12 @@ a.nav-item-link:hover {
   transition: all 0.5s;
 }
 
+
+/* footer-noticias */
 .footer-noticias {
   background-color: #C7CEDD;
   padding: 25px 0;
-  border-top: 1px solid #1E2738;
+  border-top: 1px solid #a5a5a5;
 }
 
 .footer-noticias-title {
@@ -315,7 +287,12 @@ a.nav-item-link:hover {
 
 .row-footer-noticias {
   margin: 10px 0;
-  padding: 30px 0;
+  padding: 0;
+}
+
+.btn-footer-projetos-noticias{
+  padding: 0px;
+  width: 100%;
 }
 
 .col-footer-noticias {
@@ -353,15 +330,20 @@ a.nav-item-link:hover {
 }
 
 .card-footer-noticias-data {
-  font-weight: 800;
+  font-weight: 800; 
   font-size: 0.875rem;
 }
 
 .card-footer-noticias-text {
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 0.860rem;
   font-family: "Montserrat";
 }
+
+body{
+  background: #E7EBF4;
+}
+
 
 .galeria-post {
   column-count: 3;
@@ -383,18 +365,19 @@ a.nav-item-link:hover {
   margin-left: 14px;
 }
 
-.botao-voltar-projeto-post {
+.botao-voltar-projeto-post {    
   text-align: right;
-  margin-left: -30px;
+  margin-left: -30px;    
 }
-.projetos-link{
-  font-family: "Montserrat";
+.projetos-link{   
   color: red;
   font-weight: bold;
 }
 .projeto-box{
   margin-top: 20px;
 }
+
+/* mapa-pagina projetos post */
 .localizacao-container{
   margin-top: 25px;
   margin-bottom: 51px;
@@ -404,13 +387,13 @@ a.nav-item-link:hover {
 }
 
 .projeto-titulo{
-  margin-top: 51px;
+  margin-top: 51px;   
 }
 
 .projeto-lista{
   z-index: 900;
   border-top: #ccc 2px solid;
-  border-bottom: #ccc 2px solid;
+  border-bottom: #ccc 2px solid;        
 }
 .projeto-lista p strong{
   margin-left: 10px;
@@ -468,7 +451,6 @@ a.nav-item-link:hover {
 #modalGaleria  img {
   max-height: 80vh;
   margin: auto;
-  width: 100%;
 }
 
 /* CSS DA PÁGINA QUEM SOMOS */
@@ -482,7 +464,7 @@ a.nav-item-link:hover {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 65px;
-
+  
   margin-top: 50px;
 }
 
@@ -506,12 +488,12 @@ ul .sobre-list:before{
   content: '•';
   font-weight: 600;
   color: #44B8A5;
-
+  
 }
 
 .container .hr{
   border-bottom: 1px solid #a5a5a5;
-
+  
 }
 
 
@@ -519,13 +501,13 @@ ul .sobre-list:before{
   height: 70px;
   display: flex;
   align-items: flex-end;
-
+  
 }
 .coolab-trabalhos-imagesicon  img{
   /* width: 55%; */
   /* max-width: 20vh;
-
-} */
+  
+} */ 
 
 .card-quemsomos{
   background-color: #e7ebf4;
@@ -551,11 +533,11 @@ ul .sobre-list:before{
 }
 
 .sobre-button{
-
+  
   width: 100%;
   display: flex;
   justify-content: flex-end;
-
+  
 }
 .sobre-button a{
   margin-top: 20px;
@@ -571,7 +553,7 @@ ul .sobre-list:before{
 .quemsomos-inicio {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;    
   margin: 0 auto;
 }
 
@@ -580,11 +562,12 @@ ul .sobre-list:before{
 .btn-participar-center{
   justify-content: end;
 }
+
+
 /* mobile página quem somos */
-
 @media (max-width: 768px){
-
-
+  
+  
   .mobile-quemsomos{
     text-align: center;
     /* display: flex; */
@@ -594,19 +577,36 @@ ul .sobre-list:before{
   .coolab-trabalhos-imagesicon{
     display: block;
   }
-
+  
   .titulo-quemsomos{
     text-align: center;
     padding-top: 25px;
   }
-
+  
   h1{
     text-align: center;
     padding-top: 26px;
   }
-
+  
   .sobre-button{
     justify-content: center;
+  }
+
+  .contador-grande >p {
+    font-size: 1.2rem !important;
+  }
+  
+  .contador-grande > span {
+    font-size: 3rem !important ;
+    color: yellow ;
+    
+  }
+}
+
+@media (max-width: 420px){
+  .contador-grande > span {
+    font-size: 3rem;
+
   }
 }
 
@@ -619,64 +619,31 @@ ul .sobre-list:before{
   margin-bottom: 20px;
 }
 
-
-
-
-/* footer-contador */
-
-.section-contador{
-  background-color: #C7CEDD;
-  background: url("assets/images/textura.png");
-  height: 15rem;
-
-}
 .contador{
-  background: url("assets/images/textura.png");
+  background: url("../assest/textura.png");
   background-size: cover;
   height: 15rem;
-
-
+  width: 100%; 
 }
 
 .contador-grande{
   display: flex;
-
+  
   flex-direction: column;
   align-items: center;
-
+  
 }
 .contador-grande span,{
   color: white;
-}
-
-
+} 
 
 .contador-grande > span {
-  font-family: "Montserrat";
   font-size: 5rem;
   color: white;
 }
 
 .contador-grande > p {
-  font-family: "Montserrat";
   font-size: 1.5rem;
   text-align: center;
   color: white;
-
-}
-
-@media (max-width: 420px){
-  .contador-grande > span {
-    font-family: "Montserrat";
-    font-size: 3rem;
-
-  }
-
-  .contador-grande > p {
-    font-family: "Montserrat";
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
-
-  }
 }
