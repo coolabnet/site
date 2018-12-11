@@ -1,13 +1,16 @@
 <?php get_header();?>
-<?php get_template_part('template-parts/coolab','video'); ?>
-<div class="content-wrapper">
-    <!--chama os projetos-->
-    <?php get_template_part('template-parts/coolab','projetos'); ?>
-    
-    <?php get_template_part('template-parts/coolab', 'noticias');?>
-    <!-- coolab-info -->
-    <?php get_template_part('template-parts/coolab', 'info');?>
+<main class="main">
+<div class="container-menor">
+  <h1>Notícias</h1>
+  <?php if(have_posts()) :?>
+    <?php while(have_posts()) : the_post();?>
 
-    <!-- footer vai arqui-->
-    <?php get_footer();?>
+  <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
+<?php endwhile; ?>
+<?php else : ?>
+    <h2>Não achou</h2>
+<?php endif;?>
+
 </div>
+</main>
+<?php get_footer();?>
