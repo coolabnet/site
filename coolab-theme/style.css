@@ -132,13 +132,9 @@ ul.coolab-menu-trans li, .nav-item-link .nav-link .medium .active a {
 }
 */
 
-<<<<<<< HEAD
-
-=======
 .nav-item-link,  .nav-link, .medium, .active, li.menu-item a  {
   color: red;
 }
->>>>>>> 8aea5fe7b5d23c4c995e525cb71abf1ca4252f56
 
 
 @media (max-width: 420px) {
