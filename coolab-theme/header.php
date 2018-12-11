@@ -13,8 +13,12 @@
 </head>
 
 <body>
-    <header class="header-index">
+    <?php if ( is_front_page() ) : ?>
+    <header class='header-index'>
         <nav class="navbar navbar-expand-lg navbar-dark align-content-between d-flex flex-wrap">
+    <?php else: ?>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <?php endif; ?>
             <div class="header-nav container d-flex ">
                 <a class="navbar-brand col-2 " href="<?php echo home_url();?>">
                     <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/coolab_logo_branco.png" alt="" class="img-logo img-responsive">
@@ -27,30 +31,18 @@
 
                 <?php
                    wp_nav_menu(array(
-<<<<<<< HEAD
                      'menu'=>'principal-home',
-=======
-                     'menu'=>'menu_coolab',
->>>>>>> 8aea5fe7b5d23c4c995e525cb71abf1ca4252f56
                      'menu_class'=>'navbar-nav mr-auto',
                      'theme_location'=>'menu_coolab',
                      'container'=>'div',
                      'container_class'=>'collapse navbar-collapse',
-<<<<<<< HEAD
                      'container_id'=>'navbarSupportedContent'
                      ));
                  ?>
 
 
-=======
-                     'container_id'=>'navbarSupportedContent',
-                     ));
-                 ?>
-
-              
->>>>>>> 8aea5fe7b5d23c4c995e525cb71abf1ca4252f56
             </div>
-
+        <?php if ( is_front_page() ) : ?>
             <div class="container">
                 <div class="row header-text-row">
                     <div class="header-text align-items-start col-lg-6 col-md-9">
@@ -64,4 +56,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+      <?php else : ?>
+        </nav>
+      </header>
+      <?php endif; ?>
