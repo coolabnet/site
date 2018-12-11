@@ -12,7 +12,8 @@ Author: Coolab
 }
 
 body{
-  background: #E7EBF4;
+/*  background: #E7EBF4;*/
+  background: #C7CEDD
 }
 
 a:hover {
@@ -116,26 +117,34 @@ a.nav-item-link:hover {
   /* margin-right: 30rem; */
 }
 
-
-/* menu
-ul.coolab-menu-trans, .nav-item li {
-
-}
-
-ul.coolab-menu-trans li, .nav-item-link .nav-link .medium .active a {
-
-}
-*/
 /*
-.menu-item, .nav-item-link,  .nav-link, .medium, .active {
-
-}
-*/
-
 .nav-item-link,  .nav-link, .medium, .active, li.menu-item a  {
   color: red;
 }
+*/
 
+.blog-post {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #E7EBF4;
+  padding: 5rem;
+}
+
+.blog-post-title {
+  font-family: "Montserrat Alternates";
+  color: #24B29A;
+  font-weight: bolder;
+}
+
+.blog-post-meta {
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+}
+
+.blog-post-content {
+  font-family: "Montserrat";
+
+}
 
 @media (max-width: 420px) {
   .img-logo {
@@ -158,6 +167,7 @@ ul.coolab-menu-trans li, .nav-item-link .nav-link .medium .active a {
 .footer-div-2{
   padding-bottom: 10px;
 }
+
 
 @media screen and (max-width: 768px){
   .header-index {
