@@ -15,6 +15,8 @@
 get_header(); ?>
 
 
+
+
     <section class="section-projetos">
         <div class="container">
             <div class="row row-footer-heading">
@@ -31,41 +33,29 @@ get_header(); ?>
             </div>
             <section class="projetos-card">
                 <div class="row row-projetos">
-                    <div class="col-lg-4 col-projetos">
-                        <div class="card-projetos">
-                            <div class="card-body card-projetos-body">
-                                <div class="card-projetos-content">
-                                    <h5 class="card-title card-projetos-title footer-projetos-title">Redes Wifi local
-                                        da casa dos meninos</h5>
-                                    <p class="card-text card-projetos-text">São Paulo, SP</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-projetos">
-                        <div class="card-projetos card-dois-projetos">
-                            <div class="card-body card-projetos-body">
-                                <div class="card-projetos-content">
-                                    <h5 class="card-title card-projetos-title footer-projetos-title"> Transmissão de
-                                        rádio digital por ondas curtas.</h5>
-                                    <p class="card-text card-projetos-text">Amazônia</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <?php
+                  $args = array(
+                    'numberposts' => 3,
+                    'category' => 'projeto'
+                  );
+                  $latest_posts = get_posts( $args );
+                  ?>
+                  <?php foreach ( $latest_posts as $curr_post ) : ?>
+                      <div class="col-lg-4 col-projetos">
+                          <div class="card-projetos" style="background-image: url('<?php echo get_the_post_thumbnail_url($curr_post); ?>');">
+                              <div class="card-body card-projetos-body">
+                                  <div class="card-projetos-content">
+                                      <h5 class="card-title card-projetos-title footer-projetos-title">
+                                        <?php echo get_the_title($curr_post); ?>
+                                      </h5>
+                                      <p class="card-text card-projetos-text"><?php echo get_the_post_thumbnail_caption($curr_post); ?></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  <?php endforeach; ?>
 
-                    <div class="col-lg-4 col-projetos">
-                        <div class="card-projetos card-tres-projetos">
-                            <div class="card-body card-projetos-body">
-                                <div class="card-projetos-content">
-                                    <h5 class="card-title card-projetos-title footer-projetos-title">Rede comunitária
-                                        de Fumaça</h5>
-                                    <p class="card-text card-projetos-text">Resende/RJ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </section>
