@@ -18,4 +18,9 @@ function stylize_menu_anchor ($atts) {
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'stylize_menu_anchor');
+
+//this is used with the project pages
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 350, 350);
+
 ?>
