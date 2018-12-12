@@ -1,7 +1,13 @@
 <?php get_header();?>
 <main class="main">
 <div class="container-menor">
-  <h1>Notícias</h1>
+  <?php if (!(is_single())) : ?>
+    <?php if (is_category('noticias')) : ?>
+      <h1>Notícias</h1>
+    <?php elseif (is_category('projetos')) : ?>
+      <h1>Projetos</h1>
+    <?php endif; ?>
+  <?php endif; ?>
   <?php if(have_posts()) :?>
     <?php while(have_posts()) : the_post();?>
 
