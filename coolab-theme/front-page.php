@@ -6,10 +6,6 @@
  * appear.
  * Learn more: https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
  */
 
 get_header(); ?>
@@ -37,7 +33,7 @@ get_header(); ?>
                   <?php
                   $args = array(
                     'numberposts' => 3,
-                    'category' => 'projeto'
+                    'category_name' => 'projeto'
                   );
                   $latest_posts = get_posts( $args );
                   ?>
@@ -80,7 +76,38 @@ get_header(); ?>
             </div>
 
             <div class="row row-footer-noticias">
+
+                <?php
+                $args = array(
+                  'numberposts' => 3,
+                  'category_name' => 'notícia'
+                );
+                $noticias_posts = get_posts( $args );
+                ?>
+                <?php foreach ( $noticias_posts as $curr_post ) : ?>
+                  <?php setup_postdata($curr_post); //because https://developer.wordpress.org/reference/functions/get_the_excerpt/#comment-2457 ?>
+                  <div class="col-lg-4 col-footer-noticias">
+                      <div class="card-footer-noticias">
+
+                        <?php if (get_the_post_thumbnail_url($curr_post)):  ?>
+                        <div class="card-footer-noticias-img">
+                            <img class="card-img-top img-fluid" src="<?php echo get_the_post_thumbnail_url($curr_post); ?>" alt="<?php echo get_the_post_thumbnail_caption($curr_post); ?>">
+                        </div>
+                        <?php endif; ?>
+                        <div class="card-body card-footer-noticias-body">
+                          <h5 class="card-title card-footer-noticias-title"><?php echo get_the_title($curr_post); ?>
+                          </h5>
+                          <h6 class="card-subtitle card-footer-noticias-data mb-2 text-muted"><?php echo get_the_date("",$curr_post); ?>
+                          </h6>
+                          <p class="card-text card-footer-noticias-text"><?php echo get_the_excerpt($curr_post); ?></p>
+                          </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+                <!--
                 <div class="col-lg-4 col-footer-noticias">
+
                     <div class="card-footer-noticias">
                         <div class="card-body card-footer-noticias-body">
                             <h5 class="card-title card-footer-noticias-title">Coolab Camp - Redes Livres Mão Na Massa
@@ -98,6 +125,7 @@ get_header(); ?>
                                 autônomas de telecomunicação, estimulando a</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-lg-4 col-footer-noticias">
@@ -129,6 +157,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
+              -->
             </div>
         </div>
 
