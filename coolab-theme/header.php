@@ -50,8 +50,9 @@
                             comunitária
                             fomentando infraestruturas autônomas,
                             através da capacitação técnica e ativação</h1>
-                        <button type="submit" class="btn btn-rosa text-light"><a href="comoparticipar.html" class="text-light">Como
-                            participar</a></button>
+                            <form action="<?php echo home_url(); ?>/index.php/como-participar/">
+                              <button type="submit" class="btn btn-rosa text-light"><a  class="text-light">Como
+                            participar</a></button></form>
                     </div>
                 </div>
             </div>
