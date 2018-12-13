@@ -60,8 +60,25 @@
       </main>
 
   <?php else : // if it is not a category query, then we'll show a single post?>
-      <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
-      <?php the_post(); ?>
+    <?php if (in_category('noticia')) : ?>
+      <!-- noticia -->
+      <?php if(have_posts()) :?>
+        <?php while(have_posts()) : the_post();?>
+          <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
+        <?php endwhile; ?>
+      <?php else : ?>
+        <h2>Não há posts de notícias</h2>
+      <?php endif;?>
+    <?php elseif (in_category('projeto')) : ?>
+      <!-- projeto -->
+      <?php if(have_posts()) :?>
+        <?php while(have_posts()) : the_post();?>
+          <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
+        <?php endwhile; ?>
+      <?php else : ?>
+        <h2>Não há posts de projetos</h2>
+      <?php endif;?>
+    <?php endif; ?>
   <?php endif; ?>
 
 
