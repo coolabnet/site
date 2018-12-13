@@ -21,8 +21,8 @@ get_header(); ?>
                 </div>
                 <div class="col">
                     <div class="botao-voltar-projeto-post  btn-footer-projetos-noticias">
-                        <a class="projetos-link" href="projetos.html">Ver todos os projetos</a>
-                        <a class="projetos-link" href="projetos.html">
+                        <a class="projetos-link" href="<?php echo (home_url()."/index.php/category/projeto/") ?>">Ver todos os projetos</a>
+                        <a class="projetos-link" href="<?php echo (home_url()."/index.php/category/projeto/") ?>">
                             <img class="img" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/icons/seta.png"> </a>
                     </div>
                 </div>
@@ -39,6 +39,7 @@ get_header(); ?>
                   ?>
                   <?php foreach ( $latest_posts as $curr_post ) : ?>
                       <div class="col-lg-4 col-projetos">
+                        <a href="<?php the_permalink($curr_post); ?>">
                           <div class="card-projetos" style="background-image: url('<?php echo get_the_post_thumbnail_url($curr_post); ?>');">
                               <div class="card-body card-projetos-body">
                                   <div class="card-projetos-content">
@@ -49,6 +50,7 @@ get_header(); ?>
                                   </div>
                               </div>
                           </div>
+                        </a>
                       </div>
                   <?php endforeach; ?>
 
@@ -68,8 +70,8 @@ get_header(); ?>
                 </div>
                 <div class="col">
                     <div class="botao-voltar-projeto-post  btn-footer-projetos-noticias">
-                        <a class="projetos-link" href="projetos.html">Ver todas as notícias</a>
-                        <a class="projetos-link" href="projetos.html">
+                        <a class="projetos-link" href="<?php echo (home_url()."/index.php/category/noticia/") ?>">Ver todas as notícias</a>
+                        <a class="projetos-link" href="<?php echo (home_url()."/index.php/category/noticia/") ?>">
                             <img class="img" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/icons/seta.png"> </a>
                     </div>
                 </div>
