@@ -11,7 +11,7 @@
 
 	<?php if (is_single()): ?>
 
-		<p class="blog-post-content"<?php the_content(); ?></p>
+		<p class="blog-post-content"><?php the_content(); ?></p>
 
 
 	<?php else : ?>
