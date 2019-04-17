@@ -1,15 +1,20 @@
 <?php get_header();?>
   <?php if (is_category('noticia')) : // this checks whether a query for a given category was made ?>
-    <main class="main">
-      <div class="container-menor">
+    <main class="main" role="main">
+      <div class="container-menor container">
         <h1>Notícias</h1>
-        <?php if(have_posts()) :?>
-          <?php while(have_posts()) : the_post();?>
-            <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
-          <?php endwhile; ?>
-        <?php else : ?>
-          <h2>Não há posts de notícias</h2>
-        <?php endif;?>
+        <div class="row">
+          <div classs="col-1 col-md-1 col-sm-1"></div>
+          <?php if(have_posts()) :?>
+            <?php while(have_posts()) : the_post();?>
+              <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
+            <?php endwhile; ?>
+          <div classs="col-1 col-sm-1 col-md-1"></div>
+
+          <?php else : ?>
+            <h2>Não há posts de notícias</h2>
+          <?php endif;?>
+        </div>
       </div>
     </main>
   <?php elseif (is_category('projeto')) : ?>

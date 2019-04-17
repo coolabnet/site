@@ -3,6 +3,14 @@ Theme Name: Coolab
 Description: Templete da Coolab
 Author: Coolab
 */
+ @font-face{
+    font-family: MontserratRegular;
+    src: url('css/fonts/montserrat/Montserrat-Regular.ttf');
+}
+@font-face{
+    font-family: MontserratAlternates;
+    src: url('css/fonts/montserrat_alternates/MontserratAlternates-Black.ttf');
+}
 
 * {
   box-sizing: border-box;
@@ -16,39 +24,43 @@ body{
   background: #C7CEDD
 }
 
+a{color: #24B29A;}
+footer a{color: #fff;}
+
 a:hover {
   text-decoration: none;
 }
-
+a:active{
+  outline: none;
+}
 h1 {
-  font-family: "Montserrat Alternates";
-  font-weight: 800;
+  font-family: "MontserratAlternates";
   font-size: 1.563rem;
   padding: 30px 0;
   padding-top: 35px;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Montserrat Alternates";
+  font-family: "MontserratAlternates";
 
 }
 
 a.medium {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
   font-size: 1rem;
   font-weight: bold;
 }
 
 
 label.medium {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
   font-size: 1rem;
   font-weight: bold;
   color: #50596F;
 }
 
 p.medium {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
   font-size: 1rem;
   font-weight: bold;
   color: #50596F
@@ -59,8 +71,8 @@ h5{
 }
 
 p {
-  font-weight: 600;
-  color: #1E2738;
+  color: #50596F;
+  font-family: MontserraRegular; 
 }
 
 .header {
@@ -84,6 +96,7 @@ p {
   background-size: cover;
   height: 30rem;
 }
+header.navecacao{margin-bottom: 45px;}
 
 .header-nav {
   height: 4rem;
@@ -99,7 +112,6 @@ button.header-nav-img {
 }
 
 .header-title {
-  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -127,22 +139,22 @@ a.nav-item-link:hover {
   width: 100%;
   margin: 0 auto;
   background-color: #E7EBF4;
-  padding: 5rem;
+  padding: 2rem;
+  margin-bottom: 30px;
 }
+.blog-post-info{margin-bottom:30px;}
 
 .blog-post-title {
-  font-family: "Montserrat Alternates";
+  font-family: "MontserratAlternates";
   color: #24B29A;
-  font-weight: bolder;
 }
 
 .blog-post-meta {
-  font-family: "Montserrat Alternates";
-  font-weight: bold;
+  font-family: "MontserratAlternates";
 }
 
 .blog-post-content {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
 
 }
 
@@ -224,10 +236,7 @@ a.nav-item-link:hover {
 
 }
 
-.container-menor {
-  width: 70%;
-  margin: 0 auto;
-}
+.container-menor {}
 
 .contato {
   background-color: #E7EBF4;
@@ -281,7 +290,7 @@ a.nav-item-link:hover {
 }
 
 .card-projetos {
-  width: 100%;
+  width: 97%;
   height: 350px;
   background-image: url(assets/temp/noticias/foto1.png);
   background-position: center;
@@ -340,7 +349,6 @@ a.nav-item-link:hover {
 }
 
 .footer-noticias-title {
-  font-weight: 800;
   font-size: 1.563rem;
 }
 
@@ -594,7 +602,7 @@ ul .sobre-list:before{
   margin-bottom: 40px;
   background-color: #f9005b;
   padding: 8px 20px;
-  font-family: "Montserrat Alternates";
+  font-family: "MontserratAlternates";
   font-weight: 500;
   font-size: 0.8rem;
   color: white;
@@ -683,13 +691,13 @@ ul .sobre-list:before{
 
 
 .contador-grande > span {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
   font-size: 5rem;
   color: white;
 }
 
 .contador-grande > p {
-  font-family: "Montserrat";
+  font-family: "MontserratRegular";
   font-size: 1.5rem;
   text-align: center;
   color: white;
@@ -698,13 +706,13 @@ ul .sobre-list:before{
 
 @media (max-width: 420px){
   .contador-grande > span {
-    font-family: "Montserrat";
+    font-family: "MontserratRegular";
     font-size: 3rem;
 
   }
 
   .contador-grande > p {
-    font-family: "Montserrat";
+    font-family: "MontserratRegular";
     font-size: 1.2rem;
     text-align: center;
     color: white;

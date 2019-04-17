@@ -17,6 +17,7 @@
     <header class='header-index'>
         <nav class="navbar navbar-expand-lg navbar-dark align-content-between d-flex flex-wrap">
     <?php else: ?>
+      <header class='navecacao'>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <?php endif; ?>
             <div class="header-nav container d-flex ">
