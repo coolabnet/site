@@ -9,7 +9,25 @@
  */
 
 get_header(); ?>
+<?php if ( is_front_page() ) : ?>
+    </div>
+<?php endif; ?>
 
+
+        <div class="container">
+            <div class="row header-text-row">
+                <div class="header-text align-items-start col-lg-6 col-md-9">
+                    <h1 class="header-title">A Coolab agrega diversas pessoas e projetos de telecomunicação
+                        comunitária
+                        fomentando infraestruturas autônomas,
+                        através da capacitação técnica e ativação</h1>
+                        <form action="<?php echo home_url(); ?>/index.php/como-participar/">
+                          <button type="submit" class="btn btn-rosa text-light"><a  class="text-light">Como
+                        participar</a></button></form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -92,11 +92,9 @@ p {
 }
 
 .header-index {
-  background-image: url(assets/images/img_home.png);
-  background-size: cover;
-  height: 30rem;
+ 
 }
-header.navecacao{margin-bottom: 45px;}
+header.navecacao{}
 
 .header-nav {
   height: 4rem;
@@ -142,7 +140,7 @@ a.nav-item-link:hover {
   padding: 2rem;
   margin-bottom: 30px;
 }
-.blog-post-info{margin-bottom:30px;}
+.blog-post-info{margin-bottom:45px;}
 
 .blog-post-title {
   font-family: "MontserratAlternates";
@@ -183,7 +181,7 @@ a.nav-item-link:hover {
 
 @media screen and (max-width: 768px){
   .header-index {
-    height: 30rem;
+    
   }
 
   .header-text {
@@ -269,7 +267,10 @@ a.nav-item-link:hover {
   color: red;
   padding-left: 30px;
 }
-
+section.section-quemsomos{
+   background-image: url(assets/images/img_home.png);
+  background-size: cover;
+}
 .section-projetos {
   background-color: #C7CEDD;
   padding: 30px 0;
@@ -382,6 +383,9 @@ a.nav-item-link:hover {
   padding: 20px 25px;
   color: #ffffff;
   z-index: 99;
+  height: 200px;
+  overflow-y: hidden;
+  word-wrap: break-word;
 }
 
 .card-footer-noticias-title {
