@@ -1,197 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>Coolab</title>
-
+    <title>Quem somos</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
-
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-    <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-        <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/marketing.css">
-    <!--<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates:600,800" rel="stylesheet">
     <link rel="stylesheet" href="css/folha.css">
 </head>
+
 
 <body>
     <div class="header">
         <div class="custom-wrapper pure-g" id="menu">
            <div class="pure-u-1 pure-u-md-1-5">
                <div class="pure-menu">
-                   <a href="index.html" class="pure-menu-heading custom-brand">Coolab</a>
+                   <a href="index.html" class="pure-menu-heading custom-brand"><img src="img/logo/coolab_logo_branco.png" alt="Logo da Coolab"></a>
                    <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
                </div>
            </div>
            <div class="pure-u-1 pure-u-md-4-5">
                <div class="pure-menu pure-menu-horizontal custom-can-transform">
-                   <ul class="pure-menu-list">
-                       <li class="pure-menu-item"><a href="quemsomos.html" class="pure-menu-link">Quem somos</a></li>
-                       <li class="pure-menu-item"><a href="participe.html" class="pure-menu-link">Como participar</a></li>
-                       <li class="pure-menu-item"><a href="projetos.html" class="pure-menu-link">Projetos</a></li>
-                       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
-                       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wiki</a></li>
-
-                   </ul>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="quemsomos.html" class="pure-menu-link">Quem somos</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Como participar</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="projetos.html" class="pure-menu-link">Projetos</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="blog.html" class="pure-menu-link">Blog</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Documentação</a>
+                    </li>
+                </ul>
                </div>
            </div>
          </div>
     </div>
+
+
+    <!-- conteúdo quem somos -->
     <div class="content-wrapper" style="top:0; background: #e6eaf4;">
-        <div id="coolab-sobre">
-          <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-5"> </div>
-            <div class="pure-u-1 pure-u-md-3-5">
-              <iframe width="100%" height="385" src="https://www.youtube.com/embed/Pw9I6r34SNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              
-            </div>
-       
-       
-            <div class="pure-u-1 pure-u-md-1-5"> </div>
-            <!-- <div class="pure-u-1 pure-u-md-2-5"> </div> -->
-            <div class="pure-u-1 " style="margin-left: 23%; margin-top: 50px; "> 
-              
-              <p>A Coolab - laboratório cooperativo de redes livres - é uma iniciativa que agrega diversas <br/>
-              pessoas envolvidas com projetos de telecomunicação comunitária. Nosso objetivo é fomentar <br/>
-              as infraestruturas autônomas, através da capacitação técnica e ativação comunitária e,</br>
-              sempre que possível, financiar esses projetos.</p>
+        <div id="coolab-sobre" class="content">
+            <div class="container">
+                <div class="pure-g sobre-coolab">
 
-              <p>Entre os projetos que tiveram a participação de membros da cooperativa, citamos:</p>
-              <ul>
-                <li> Redes WiFi da Casa dos Meninos, São Paulo/SP</li>
-                <li>Rede comunitária de Fumaça, Resende/RJ</li>
-                <li>Provedores comunitários no município de Campos/RJ</li>
-                <li>Transmissão de rádio digital por ondas curtas na Amazônia</li>
-                <li>Rede comunitária Kalungas</li>
-              </ul>
-              <p>No começo de 2017, a Coolab foi selecionada no Desafio Equal Rating da Mozilla como <br/>
-              projeto mais inovador, recebendo um apoio de 30 mil dólares para começar as operações.<br/> Com essa verba vamos montar as primeiras redes. Além disso vamos ter um apoio de 10<br/>
-              mil reais da Fundação Ford através da Nuvem</p>
-            </div>
-            
-        </div>
-        </div>
-        </class="pure-g">
-        <div class="content" id ="coolab-trabalhos" style="text-align:center;">
-            <h2 class="content-head is-center">Como Trabalhamos</h2>
-            <div class="pure-g"  style="border-bottom:1px solid #a5a5a5;">
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="trabalho">
-                      <div class="descricao">
-                        <h3 class="content-subhead">
-                            Apoiar
+                    <div class="l-box  pure-u-1 pure-u-md-5-5 ">
+                        <h3 class= "sobre-collab-title">  Sobre a Coolab  </h3>
+                       
 
-                        </h3>
-                        <p>
-                            A Coolab acredita que ajudar as 
-                            comunidades a criarem suas próprias
-                            redes através de recursos financeiros
-                            emprestados é um caminho para que 
-                            este espírito solidário se multiplique e cada vez mais elas possam se ajudar
-                        </p>
-                      </div>
                     </div>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="trabalho">
-                      <div class="descricao">
-                         <h3 class="content-subhead">
-                            Capacitar
-                        </h3>
-                        <p>
-                            Só a infraestrutura não basta, para se ter
-                            autonomia é preciso apropriação do 
-                            conhecimento e vontade de fazer 
-                            acontecer. Nós compreendemos que 
-                            conhecimento só existe se for 
-                            compartilhado e nos enganjamos e 
-                            incentivamos que todos que 
-                            participarem deste processo possam
-                            aderir a esta corrent do bem.
-                        </p>
-                      </div>
+                    <!-- <div class="sobre-iframe"> -->
+                        <iframe width="100%" height="385" src="https://www.youtube.com/embed/Pw9I6r34SNA" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!-- </div> -->
+
+
+                    <!-- <div class="pure-u-1 pure-u-md-2-5"> </div> -->
+                    <div class="pure-u-1  " style="margin-left: 23%; margin-top: 50px; ">
+
+                        <p>A Coolab - laboratório cooperativo de redes livres - é uma iniciativa que agrega diversas
+                            <br />
+                            pessoas envolvidas com projetos de telecomunicação comunitária. Nosso objetivo é fomentar
+                            <br />
+                            as infraestruturas autônomas, através da capacitação técnica e ativação comunitária e,</br>
+                            sempre que possível, financiar esses projetos.</p>
+
+                        <p>Entre os projetos que tiveram a participação de membros da cooperativa, citamos:</p>
+                        <ul>
+                            <li class="sobre-list"> Redes WiFi da Casa dos Meninos, São Paulo/SP</li>
+                            <li class="sobre-list"> Rede comunitária de Fumaça, Resende/RJ</li>
+                            <li class="sobre-list"> Provedores comunitários no município de Campos/RJ</li>
+                            <li class="sobre-list"> Transmissão de rádio digital por ondas curtas na Amazônia</li>
+                            <li class="sobre-list"> Rede comunitária Kalungas</li>
+                        </ul>
+                        <p>No começo de 2017, a Coolab foi selecionada no Desafio Equal Rating da Mozilla como <br />
+                            projeto mais inovador, recebendo um apoio de 30 mil dólares para começar as operações.<br />
+                            Com essa verba vamos montar as primeiras redes. Além disso vamos ter um apoio de 10<br />
+                            mil reais da Fundação Ford através da Nuvem</p>
                     </div>
+
                 </div>
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="trabalho">
-                        <div class="descricao">
-                          <h3 class="content-subhead">
-                            Conectar
-                          </h3>
-                          <p>
-                            A rede não é meramente técnica, a rede
-                            é feita de pessoas. Acreditamos que as
-                            redes comunitárias são extensões da
-                            nossa vida real e nada melhor do que
-                            estarmos conectados com quem 
-                            vivemos tão próximos.
-                          </p>
-                        
+
+
+                <div class="content" id="coolab-trabalhos" style="text-align:center;">
+                    <h2 class="content-head is-center">Como Trabalhamos</h2>
+                    <!-- <div class="coolab-trabalhos-imagesicon">
+                        <div class=>
+                            <img src="img/icons/apoiar.png" alt="Imagem de um nota de dinheiro">
+                        </div>
+                        <div class=>
+                                <img src="img/icons/capacitar.png" alt="" srcset="">
+                        </div>
+                        <div >
+                                <img src="img/icons/conectar.png" alt="" srcset="">
+                        </div>
+                       
+
+                    </div> -->
+
+                    <div class="pure-g" style="border-bottom:1px solid #a5a5a5;">
+
+
+
+                        <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                            <div class="trabalho">
+                                <div class="descricao">
+                                    <div class="coolab-trabalhos-imagesicon">
+                                                <img src="img/icons/apoiar.png" alt="Imagem de um nota de dinheiro">
+                                            </div>
+                                    <h3 class="content-subhead">
+                                        Apoiar
+
+                                    </h3>
+                                    <p>
+                                        A Coolab acredita que ajudar as
+                                        comunidades a criarem suas próprias
+                                        redes através de recursos financeiros
+                                        emprestados é um caminho para que
+                                        este espírito solidário se multiplique e cada vez mais elas possam se ajudar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                            <div class="trabalho">
+                                <div class="descricao">
+                                        <div class="coolab-trabalhos-imagesicon">
+                                                <img src="img/icons/capacitar.png" alt="Imagem de um nota de dinheiro">
+                                            </div>
+                                    <h3 class="content-subhead">
+                                        Capacitar
+                                    </h3>
+                                    <p>
+                                        Só a infraestrutura não basta, para se ter
+                                        autonomia é preciso apropriação do
+                                        conhecimento e vontade de fazer
+                                        acontecer. Nós compreendemos que
+                                        conhecimento só existe se for
+                                        compartilhado e nos enganjamos e
+                                        incentivamos que todos que
+                                        participarem deste processo possam
+                                        aderir a esta corrent do bem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                            <div class="trabalho">
+                                <div class="descricao">
+                                        <div class="coolab-trabalhos-imagesicon">
+                                                <img src="img/icons/conectar.png" alt="Imagem de um nota de dinheiro">
+                                            </div>
+                                    <h3 class="content-subhead">
+                                        Conectar
+                                    </h3>
+                                    <p>
+                                        A rede não é meramente técnica, a rede
+                                        é feita de pessoas. Acreditamos que as
+                                        redes comunitárias são extensões da
+                                        nossa vida real e nada melhor do que
+                                        estarmos conectados com quem
+                                        vivemos tão próximos.
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-            <a href="participe.html" style="display:inline-block;" class="pure-button">Como Participar</a>
-        </div>
-         <div class="content" id ="coolab-projetos" style="text-align:center; background: #c6cbdc;">
-            <h2 class="content-head is-center">Projetos</h2>
-            <div class="pure-g">
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="projeto">
-                      <div class="descricao">
-                        <h3 class="content-subhead">
-                            Rede WIFI Local da Casa dos Meninos
-                        </h3>
-                        <p>
-                            São Paulo, SP
-                        </p>
-                      </div>
-                    </div>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="projeto">
-                      <div class="descricao">
-                         <h3 class="content-subhead">
-                            Rede WIFI Local da Casa dos Meninos
-                        </h3>
-                        <p>
-                            São Paulo, SP
-                        </p>
-                      </div>
-                    </div>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                    <div class="projeto">
-                        <div class="descricao">
-                          <h3 class="content-subhead">
-                            Rede WIFI Local da Casa dos Meninos
-                          </h3>
-                          <p>
-                            São Paulo, SP
-                          </p>
-                        
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-        <!-- <div class="content" id="coolab-noticias">
+                    <!-- <div class="content" id="coolab-noticias">
             <h2 class="content-head is-center">Últimas Notícias</h2>
 
             <div class="pure-g">
@@ -238,82 +224,44 @@
                 </div>
             </div>
         </div> -->
-       
+                </div>
 
-        <div class="footer l-box is-center" id="coolab-footer">
-            <div class="pure-g">
-                <div class="pure-u-4-5">
-                    <ul>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="quemsomos.html">Quem somos</a></li>
-                        <li><a href="participe.html">Como participar</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="#">wiki</a></li
-                    </ul>
-                </div>
-                <div class="pure-u-1-5">
-                    <div class="social-logo"></div>
-                    <div class="social-logo"></div>
-                    <div class="social-logo"></div>
-                </div>
+
             </div>
-            <div class="pure-g">
-                <div class="pure-u-1-5">
-                    <form class="pure-form" id="newsletter">
-                        <label for="email"> Assine a newsletter</label>
-                        <input type="text" name="email" id="email" />
-                    </form>
+
+            <div class="footer l-box is-center" id="coolab-footer">
+                <div class="pure-g">
+                    <div class="pure-u-4-5">
+                        <ul>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="quemsomos.html">Quem somos</a></li>
+                            <li><a href="participe.html">Como participar</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="#">wiki</a></li </ul> </div> <div class="pure-u-1-5">
+                            <div class="social-logo"></div>
+                            <div class="social-logo"></div>
+                            <div class="social-logo"></div>
+                    </div>
                 </div>
-                <div class="pure-u-2-5"></div>
-                <div class="pure-u-2-5">
-                    2018 coolab. alguns direitos reservados.
+                <div class="pure-g">
+                    <div class="pure-u-1-5">
+                        <form class="pure-form" id="newsletter">
+                            <label for="email"> Assine a newsletter</label>
+                            <input type="text" name="email" id="email" />
+                        </form>
+                    </div>
+                    <div class="pure-u-2-5"></div>
+                    <div class="pure-u-2-5">
+                        2018 coolab. alguns direitos reservados.
+                    </div>
                 </div>
-            </div>
+            </div>]
         </div>
     </div>
-    <script>
-      (function (window, document) {
-      var menu = document.getElementById('menu'),
-          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
-      function toggleHorizontal() {
-          [].forEach.call(
-              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-              function(el){
-                  el.classList.toggle('pure-menu-horizontal');
-              }
-          );
-      };
 
-      function toggleMenu() {
-          // set timeout so that the panel has a chance to roll up
-          // before the menu switches states
-          if (menu.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }
-          else {
-              toggleHorizontal();
-          }
-          menu.classList.toggle('open');
-          document.getElementById('toggle').classList.toggle('x');
-      };
-
-      function closeMenu() {
-          if (menu.classList.contains('open')) {
-              toggleMenu();
-          }
-      }
-
-      document.getElementById('toggle').addEventListener('click', function (e) {
-          toggleMenu();
-          e.preventDefault();
-      });
-
-      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-      })(this, this.document);
-
-      </script>
+    <script src="js/script.js"></script>
 </body>
 
-</html>
+</html>    
